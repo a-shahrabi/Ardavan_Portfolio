@@ -88,25 +88,26 @@ export default function Home() {
           className = "flex items-center space-x-4"
           >
             <Button 
-  className="rounded-full !bg-gradient-to-r !from-slate-900 !to-blue-700 text-white transition-transform hover:scale-105"
->
-  Resume
-</Button>
-              <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+            onClick={() => window.open('/resume.pdf', '_blank')}
+            className="rounded-full !bg-gradient-to-r !from-slate-900 !to-blue-700 text-white transition-transform hover:scale-105"
+              >
+            Resume
+            </Button>
+              <Link href = "https://github.com/a-shahrabi/" target="_blank" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <FaGithub className = "w-6 h-6"/>
               </Link>
 
-              <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+              <Link href = "https://www.linkedin.com/in/a-shahrabi/" target="_blank" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <FaLinkedin className = "w-6 h-6"/>
               </Link>
 
-              <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+              {/* <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <FaTwitter className = "w-6 h-6"/>
-              </Link>
+              </Link> */}
 
-              <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+              {/* <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <FaInstagram className = "w-6 h-6"/>
-              </Link>
+              </Link> */}
 
           </motion.div>
 
@@ -208,105 +209,134 @@ export default function Home() {
           </motion.section>
 
           <motion.section 
-          initial = {{opacity: 0, y: 100}}
-          animate = {{opacity: 1, y: 0}}
-          transition = {{duration: 0.8}}
-          >
-            <h2 
-  className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block mb-6">
-  Projects
-</h2>
-          <div className = "grid grid-cols-1 md:grid-cols-3 gap-3">
-            <Card className = "bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
-              <CardContent className = "p-4">
-                <Image src = {image1} alt = "project 1" className = "rounded-lg mb-4"/>
+  initial={{opacity: 0, y: 100}}
+  animate={{opacity: 1, y: 0}}
+  transition={{duration: 0.8}}
+  className="space-y-8"
+>
+<h2 className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block mb-6">
+              Projects
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <Link href="/projects/project1">
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <Image src={image1} alt="project 1" className="rounded-lg mb-4 w-full h-48 object-cover"/>
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div>
+                        <h3 className="font-medium">Project1</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <Button variant="ghost" size="icon">
+                          <FaArrowRight className="w-4 h-4"/>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-                <div className = "flex items-center justify-between">
-                  <div>
-                    <h3 className = "font-medium">Project1</h3>
-                    <p className = "text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+              <Link href="/projects/project2">
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <Image src={image2} alt="project 2" className="rounded-lg mb-4 w-full h-48 object-cover"/>
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div>
+                        <h3 className="font-medium">Project2</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <Button variant="ghost" size="icon">
+                          <FaArrowRight className="w-4 h-4"/>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-                  </div>
-                  <Button variant = "ghost" size = "icon"><FaArrowRight className="w-4 h-4"/></Button>
-                </div>
-              </CardContent>
-            </Card>
+              <Link href="/projects/project3">
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <Image src={image3} alt="project 3" className="rounded-lg mb-4 w-full h-48 object-cover"/>
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div>
+                        <h3 className="font-medium">Project3</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <Button variant="ghost" size="icon">
+                          <FaArrowRight className="w-4 h-4"/>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-            <Card className = "bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
-              <CardContent className = "p-4">
-                <Image src = {image2} alt = "project 2" className = "rounded-lg mb-4"/>
+              <Link href="/projects/project4">
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <Image src={image4} alt="project 4" className="rounded-lg mb-4 w-full h-48 object-cover"/>
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div>
+                        <h3 className="font-medium">Project4</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <Button variant="ghost" size="icon">
+                          <FaArrowRight className="w-4 h-4"/>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-                <div className = "flex items-center justify-between">
-                  <div>
-                    <h3 className = "font-medium">Project2</h3>
-                    <p className = "text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+              <Link href="/projects/project5">
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <Image src={image5} alt="project 5" className="rounded-lg mb-4 w-full h-48 object-cover"/>
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div>
+                        <h3 className="font-medium">Project5</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <Button variant="ghost" size="icon">
+                          <FaArrowRight className="w-4 h-4"/>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-                  </div>
-                  <Button variant = "ghost" size = "icon"><FaArrowRight className="w-4 h-4"/></Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className = "bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
-              <CardContent className = "p-4">
-                <Image src = {image3} alt = "project 3" className = "rounded-lg mb-4"/>
-
-                <div className = "flex items-center justify-between">
-                  <div>
-                    <h3 className = "font-medium">Project3</h3>
-                    <p className = "text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
-
-                  </div>
-                  <Button variant = "ghost" size = "icon"><FaArrowRight className="w-4 h-4"/></Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className = "bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
-              <CardContent className = "p-4">
-                <Image src = {image4} alt = "project 4" className = "rounded-lg mb-4"/>
-
-                <div className = "flex items-center justify-between">
-                  <div>
-                    <h3 className = "font-medium">Project4</h3>
-                    <p className = "text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
-
-                  </div>
-                  <Button variant = "ghost" size = "icon"><FaArrowRight className="w-4 h-4"/></Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className = "bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
-              <CardContent className = "p-4">
-                <Image src = {image5} alt = "project 5" className = "rounded-lg mb-4"/>
-
-                <div className = "flex items-center justify-between">
-                  <div>
-                    <h3 className = "font-medium">Projec54</h3>
-                    <p className = "text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
-
-                  </div>
-                  <Button variant = "ghost" size = "icon"><FaArrowRight className="w-4 h-4"/></Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className = "bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
-              <CardContent className = "p-4">
-                <Image src = {image6} alt = "project 6" className = "rounded-lg mb-4"/>
-
-                <div className = "flex items-center justify-between">
-                  <div>
-                    <h3 className = "font-medium">Project6</h3>
-                    <p className = "text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
-
-                  </div>
-                  <Button variant = "ghost" size = "icon"><FaArrowRight className="w-4 h-4"/></Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+              <Link href="/projects/project6">
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer"> 
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <Image src={image6} alt="project 6" className="rounded-lg mb-4 w-full h-48 object-cover"/>
+                    <div className="flex flex-col justify-between flex-grow">
+                      <div>
+                        <h3 className="font-medium">Project6</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">NEXT.js, TailwindCSS, Framer Motion, shadcn</p>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <Button variant="ghost" size="icon">
+                          <FaArrowRight className="w-4 h-4"/>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+            <footer className="mt-20 pb-8">
+              <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
+                © 2024 Ardavan Shahrabi. Built with Next.js and TailwindCSS. All rights reserved.
+              </p>
+            </footer>
           </motion.section>
         </main>
       </div>
