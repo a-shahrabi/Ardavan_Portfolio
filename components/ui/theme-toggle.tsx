@@ -11,11 +11,11 @@ export default function themeToggle() {
         <Button
             variant="ghost"
             size="icon"
-            className="rounded-full"
+            className="rounded-full p-2 h-10 w-10 hover:bg-transparent focus:ring-0 focus:ring-offset-0 transition-all duration-300"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
-            <FaSun className="absolute h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <FaMoon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <FaSun className="absolute h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <FaMoon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
         </Button>
     );
 }
