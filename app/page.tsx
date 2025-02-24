@@ -7,12 +7,6 @@ import { Button } from "@/components/ui/button";
 import  Link  from "next/link";
 import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
-// import image1 from '../public/2.jpeg'
-// import image2 from '../public/3.jpeg'
-// import image3 from '../public/4.jpeg'
-// import image4 from '../public/5.jpeg'
-// import image5 from '../public/6.jpeg'
-// import image6 from '../public/7.jpeg'
 
 export default function Home() {
   return (
@@ -49,8 +43,6 @@ export default function Home() {
             Ardavan Shahrabi
           </h1>
             <p className = "text-gray-600 dark:text-gray-400">Software Developer & Machine Learning Engineer</p>
-            {/* <p className = "text-gray-600 dark:text-gray-400">Certified DevOps</p> */}
-
             <p className = "text-gray-600 dark:text-gray-400">Ontario, Canada</p>
 
           </motion.div>
@@ -63,18 +55,19 @@ export default function Home() {
           >
           <h2 className = "text-lg "> Hi There!
             <p className = "text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-            I’m Ardavan Shahrabi, a recent Computer Science graduate with a passion for problem-solving, <span className = "font-bold text-black dark:text-white">algorithms</span>, and building impactful software. I love turning complex challenges into elegant solutions and writing code that makes people’s lives easier.
+            I&apos;m Ardavan Shahrabi, a recent Computer Science graduate with a passion for problem-solving, <span className = "font-bold text-black dark:text-white">algorithms</span>, and building impactful software. I love turning complex challenges into elegant solutions and writing code that makes people&apos;s lives easier.
 
-            I have experience in full-stack development, <span className = "font-bold text-black dark:text-white">DevOps</span>, and cybersecurity, with certifications in Cybersecurity from <span className = "font-bold text-black dark:text-white">Dalhousie University</span> and DevOps from ShiftKey Lab at Dalhousie University. Whether it’s securing systems, optimizing performance, or automating workflows, I enjoy diving deep into technology to create efficient and scalable solutions.
+            I have experience in full-stack development, <span className = "font-bold text-black dark:text-white">DevOps</span>, and cybersecurity, with certifications in Cybersecurity from <span className = "font-bold text-black dark:text-white">Dalhousie University</span> and DevOps from ShiftKey Lab at Dalhousie University. Whether it&apos;s securing systems, optimizing performance, or automating workflows, I enjoy diving deep into technology to create efficient and scalable solutions.
 
-            Recently, I played a key role in developing an AI-driven networking application, collaborating with a talented team in a high-pressure 10-hour <span className="font-bold text-black dark:text-white">hackathon</span> where we secured <span className = "font-bold text-black dark:text-white bold">first place.</span> I worked across multiple areas, from database architecture to OpenAI API integration, ensuring the project’s success and technical excellence.
+            Recently, I played a key role in developing an AI-driven networking application, collaborating with a talented team in a high-pressure 10-hour <span className="font-bold text-black dark:text-white">hackathon</span> where we secured <span className = "font-bold text-black dark:text-white bold">first place.</span> I worked across multiple areas, from database architecture to OpenAI API integration, ensuring the project&apos;s success and technical excellence.
 
             Beyond competitions, my work includes academic research in combinatorial pattern matching, where I helped optimize query processing for large-scale genomic datasets. My research aimed to significantly reduce data processing time and memory usage, making large-scale analyses more efficient.
 
-            I’m always eager to learn, build, and innovate—whether it’s developing intuitive applications, enhancing system security, or solving intricate coding problems. Let’s connect and create something awesome!  {" "}
+            I&apos;m always eager to learn, build, and innovate—whether it&apos;s developing intuitive applications, enhancing system security, or solving intricate coding problems. Let&apos;s connect and create something awesome!  {" "}
             </p>
 
           </h2>
+          
           </motion.div>
 
           <motion.div
@@ -96,14 +89,6 @@ export default function Home() {
               <Link href = "https://www.linkedin.com/in/a-shahrabi/" target="_blank" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
               <FaLinkedin className = "w-6 h-6"/>
               </Link>
-
-              {/* <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
-              <FaTwitter className = "w-6 h-6"/>
-              </Link> */}
-
-              {/* <Link href = "#" className = "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
-              <FaInstagram className = "w-6 h-6"/>
-              </Link> */}
 
           </motion.div>
 
@@ -158,9 +143,9 @@ export default function Home() {
             <p className = "text-gray-600 dark:text-gray-400 text-sm">
             What started as an ambitious idea in a high-pressure AI hackathon has now evolved into a full-fledged startup. Our AI-powered networking app is designed to help professionals seamlessly capture, organize, and recall key details about the people they meet.
 
-            From intelligent voice transcription to smart suggestions, we're continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
+            From intelligent voice transcription to smart suggestions, we&apos;re continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
 
-            This journey began with a winning hackathon project, but our vision extends far beyond that. We’re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
+            This journey began with a winning hackathon project, but our vision extends far beyond that. We&apos;re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
             </p>
           </div>
 
@@ -238,15 +223,6 @@ export default function Home() {
     <CardContent className="p-4">
       <div className="flex flex-col"> 
        
-        <div className="w-1/3">
-          {/* <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          /> */}
-        </div>
-
-       
         <div className="w-full flex flex-col">
           <div>
             <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
@@ -254,10 +230,7 @@ export default function Home() {
             I created a modern and interactive portfolio website to showcase my skills, projects, and experience. The website is built with Next.js, ensuring fast page loads and excellent SEO. I incorporated Framer Motion to add smooth, engaging animations for a dynamic user experience.
              The design is made using ShadCN, which helped me craft a sleek,
              responsive interface with modern design elements.
-              
-              
             </p>
-            
             
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Features:</h4>
@@ -275,7 +248,6 @@ export default function Home() {
               </ul>
             </div>
 
-            
             <div className="flex flex-wrap gap-2">
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
@@ -283,7 +255,6 @@ export default function Home() {
             </div>
           </div>
 
-         
           <div className="flex justify-end mt-4">
             <Button variant="ghost" size="icon">
               <FaArrowRight className="w-4 h-4"/>
@@ -293,7 +264,6 @@ export default function Home() {
       </div>
     </CardContent>
   </Card>
-
 </div>
 
 <div className="space-y-6"> 
@@ -301,14 +271,6 @@ export default function Home() {
     <CardContent className="p-4">
     <div className="flex flex-col"> 
        
-        <div className="w-1/3">
-          {/* <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          /> */}
-        </div>
-
         <div className="w-full flex flex-col">
           <div>
             <h3 className="text-xl font-medium mb-2">JuniorDevForge</h3>
@@ -320,7 +282,6 @@ export default function Home() {
             management and scalability. Additionally, I applied design thinking principles to create an intuitive and user-friendly 
             interface, enhancing the overall user experience. The platform was successfully deployed, empowering junior developers to 
             collaborate, learn, and build impactful projects.
-              
             </p>
          
             <div className="mb-4">
@@ -329,7 +290,7 @@ export default function Home() {
                 <li>Collaborative Project Development: Enables junior developers to form teams and work on real-world projects together, promoting teamwork and skill growth.</li>
                 <li>Seamless Deployment: The platform was successfully deployed, allowing junior developers to access it anytime to collaborate on projects.</li>
                 <li>MongoDB Database Integration: Designed and implemented a scalable database architecture to manage user data, project information, and team collaborations efficiently.</li>
-                <li>User-Friendly Interface: The platform's interface was built with a focus on usability, incorporating design thinking principles to make it easy for users to navigate and interact with.<a 
+                <li>User-Friendly Interface: The platform&apos;s interface was built with a focus on usability, incorporating design thinking principles to make it easy for users to navigate and interact with.<a 
         href="https://junior-dev-forge.vercel.app/" 
         target="_blank" 
         rel="noopener noreferrer" 
@@ -350,29 +311,19 @@ export default function Home() {
 
           <div className="flex justify-end mt-4">
             <Button variant="ghost" size="icon">
-              <FaArrowRight className="w-4 h-4"/>
+            <FaArrowRight className="w-4 h-4"/>
             </Button>
           </div>
         </div>
       </div>
     </CardContent>
   </Card>
-
 </div>
 
 <div className="space-y-6"> 
   <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
     <CardContent className="p-4">
     <div className="flex flex-col"> 
-       
-        <div className="w-1/3">
-          {/* <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          /> */}
-        </div>
-
        
         <div className="w-full flex flex-col">
           <div>
@@ -383,18 +334,15 @@ export default function Home() {
             enabling faster and more accurate data retrieval for genetic analysis. My work contributed to 
             optimizing the data processing capabilities of the project, which is crucial for large-scale genomic studies.
             Additionally, I co-authored a paper detailing the project, which was accepted for presentation at the Annual 
-            Symposium on Combinatorial Pattern Matching. This paper discusses the algorithms and data structures used in the 
-            project, showcasing our approach to improving text indexing in the context of genetics.
+            Symposium on Combinatorial Pattern Matching.
             </p>
-            
             
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Features:</h4>
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
                 <li>Efficient Data Indexing: Developed data structures and algorithms to efficiently index large-scale genetic datasets, improving processing speed and accuracy.</li>
                 <li>Genetics-Focused Algorithms: Specialized in algorithms that optimize text indexing for genomic data, addressing the unique challenges of large genetic datasets.</li>
-                <li>Paper Publication: Co-authored a research paper accepted by the Annual Symposium on 
-                  Combinatorial Pattern Matching, contributing to the academic community.<a 
+                <li>Paper Publication: Co-authored a research paper accepted by the Annual Symposium on Combinatorial Pattern Matching.<a 
         href="https://ui.adsabs.harvard.edu/abs/2022arXiv220205085T/abstract" 
         target="_blank" 
         rel="noopener noreferrer" 
@@ -405,7 +353,6 @@ export default function Home() {
               </ul>
             </div>
 
-            
             <div className="flex flex-wrap gap-2">
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">C</span>
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Algorithm</span>
@@ -413,7 +360,6 @@ export default function Home() {
             </div>
           </div>
 
-         
           <div className="flex justify-end mt-4">
             <Button variant="ghost" size="icon">
               <FaArrowRight className="w-4 h-4"/>
@@ -423,7 +369,6 @@ export default function Home() {
       </div>
     </CardContent>
   </Card>
-
 </div>
 
 <div className="space-y-6"> 
@@ -431,32 +376,23 @@ export default function Home() {
     <CardContent className="p-4">
     <div className="flex flex-col"> 
        
-        <div className="w-1/3">
-          {/* <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          /> */}
-        </div>
-
         <div className="w-full flex flex-col">
           <div>
             <h3 className="text-xl font-medium mb-2">Maverick</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4"> 
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
             Led a 5-developer Agile team designing and implementing a task management website with RESTful API. 
             Implemented CI/CD pipelines and runners with GitLab for reliable development, achieving 66% test coverage. 
             Facilitated mob programming sessions to enhance code ownership among all team members. 
-            Completed the project with the highest grade in the class.      
+            Completed the project with the highest grade in the class.
             </p>
             
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Features:</h4>
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
                 <li>Agile Team Leadership: Led a 5-developer team using Agile methodologies, ensuring efficient collaboration and timely delivery of the task management platform.</li>
-                <li>RESTful API: Designed and implemented a RESTful API for seamless communication between the front-end and back-end of the website, ensuring smooth task management operations.</li>
-                <li>CI/CD Integration: Set up and maintained CI/CD pipelines and GitLab runners to automate testing, deployment, and integration, achieving 66% test coverage for the project.</li>
-                <li>Mob Programming: Facilitated mob programming sessions to promote team collaboration, improve code ownership, and ensure high-quality code.</li>
-                <li>Technologies Used: Developed the application with a mix of Java, Spring Boot, React, and Node.js, using JUnit and Mockito for testing, and JWT for secure user authentication.</li>
+                <li>RESTful API: Designed and implemented a RESTful API for seamless communication between the front-end and back-end of the website.</li>
+                <li>CI/CD Integration: Set up and maintained CI/CD pipelines and GitLab runners to automate testing and deployment.</li>
+                <li>Mob Programming: Facilitated mob programming sessions to promote team collaboration and code ownership.</li>
               </ul>
             </div>
 
@@ -464,16 +400,11 @@ export default function Home() {
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Java</span>
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Spring Boot</span>
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">JUnit</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Mockito</span>
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">React</span>
               <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Node.js</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">JavaScript</span>
-
-
             </div>
           </div>
 
-         
           <div className="flex justify-end mt-4">
             <Button variant="ghost" size="icon">
               <FaArrowRight className="w-4 h-4"/>
@@ -483,63 +414,8 @@ export default function Home() {
       </div>
     </CardContent>
   </Card>
-
 </div>
 
-<div className="space-y-6"> 
-  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
-    <CardContent className="p-4">
-    <div className="flex flex-col"> 
-       
-        <div className="w-1/3">
-          {/* <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          /> */}
-        </div>
-
-       
-        <div className="w-full flex flex-col">
-          <div>
-            <h3 className="text-xl font-medium mb-2">Academic Performance Analysis</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            In this project, I worked with a team of three to analyze a comprehensive dataset from Kaggle, which focused on variables influencing students' academic performance. Using Python and data visualization tools, we explored and visualized the data to uncover meaningful insights.
-            I developed a linear regression model to quantify the impact of various factors, with a particular focus on mathematics performance. Our key finding was that student absences had the greatest negative impact on academic performance. Additionally, we discovered that parental support and study habits played significant roles in influencing students' success.
-            To communicate our findings, I created impactful data visualizations and presented them to the team and stakeholders. The project concluded with actionable insights that can guide educational interventions and student support strategies.
-            </p>
-            
-            
-            <div className="mb-4">
-              <h4 className="font-medium mb-2">Key Features:</h4>
-              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Linear Regression Model: Developed a linear regression model to quantify the impact of factors such as student absences, parental support, and study habits on grades.</li>
-                <li>Data Visualizations: Created compelling visualizations to communicate key findings, making complex data more accessible and understandable.</li>
-                <li>Data Analysis: Analyzed a large dataset from Kaggle to identify key variables that affect students' academic performance using Python and data visualization tools.</li>
-                <li>Key Findings: Found that student absences were the most significant negative factor affecting academic performance, while parental support and study habits contributed positively to students' success.</li>
-              </ul>
-            </div>
-
-            
-            <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
-            </div>
-          </div>
-
-         
-          <div className="flex justify-end mt-4">
-            <Button variant="ghost" size="icon">
-              <FaArrowRight className="w-4 h-4"/>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </CardContent>
-  </Card>
-
-</div>
             <footer className="mt-20 pb-8">
               <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
                 © 2024 Ardavan Shahrabi. Built with Next.js and TailwindCSS. All rights reserved.
