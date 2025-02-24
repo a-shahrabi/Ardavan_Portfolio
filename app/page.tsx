@@ -5,14 +5,14 @@ import ThemeToggle from '../components/ui/theme-toggle';
 import {motion} from 'framer-motion'
 import { Button } from "@/components/ui/button";
 import  Link  from "next/link";
-import { FaArrowRight, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
-import image1 from '../public/2.jpeg'
-import image2 from '../public/3.jpeg'
-import image3 from '../public/4.jpeg'
-import image4 from '../public/5.jpeg'
-import image5 from '../public/6.jpeg'
-import image6 from '../public/7.jpeg'
+// import image1 from '../public/2.jpeg'
+// import image2 from '../public/3.jpeg'
+// import image3 from '../public/4.jpeg'
+// import image4 from '../public/5.jpeg'
+// import image5 from '../public/6.jpeg'
+// import image6 from '../public/7.jpeg'
 
 export default function Home() {
   return (
