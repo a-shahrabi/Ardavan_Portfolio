@@ -236,18 +236,196 @@ export default function Home() {
 <div className="space-y-6"> 
   <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
     <CardContent className="p-4">
-      <div className="flex gap-6"> 
+      <div className="flex flex-col"> 
        
         <div className="w-1/3">
-          <Image 
+          {/* <Image 
             src={image1} 
             alt="project 1" 
             className="rounded-lg w-full h-48 object-cover"
-          />
+          /> */}
         </div>
 
        
-        <div className="w-2/3 flex flex-col">
+        <div className="w-full flex flex-col">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+            I created a modern and interactive portfolio website to showcase my skills, projects, and experience. The website is built with Next.js, ensuring fast page loads and excellent SEO. I incorporated Framer Motion to add smooth, engaging animations for a dynamic user experience.
+             The design is made using ShadCN, which helped me craft a sleek,
+             responsive interface with modern design elements.
+              
+              
+            </p>
+            
+            
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">Key Features:</h4>
+              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
+                <li>Dark/Light Mode Toggle: Easily switch between dark and light themes for a personalized browsing experience.</li>
+                <li>Smooth Page Transitions: Seamless transitions between pages powered by Framer Motion, creating a smooth and engaging user experience.</li>
+                <li>Responsive Design: The website is fully responsive, ensuring it looks great and functions perfectly on all devices, from desktops to mobile phones.</li>
+              </ul>
+            </div>
+
+            
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
+            </div>
+          </div>
+
+         
+          <div className="flex justify-end mt-4">
+            <Button variant="ghost" size="icon">
+              <FaArrowRight className="w-4 h-4"/>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+</div>
+
+<div className="space-y-6"> 
+  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+    <CardContent className="p-4">
+    <div className="flex flex-col"> 
+       
+        <div className="w-1/3">
+          {/* <Image 
+            src={image1} 
+            alt="project 1" 
+            className="rounded-lg w-full h-48 object-cover"
+          /> */}
+        </div>
+
+        <div className="w-full flex flex-col">
+          <div>
+            <h3 className="text-xl font-medium mb-2">JuniorDevForge</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+            As part of a team of 6, I helped develop JuniorDevForge, a platform designed to support junior developers by enabling 
+            collaborative project development and providing access to industry-relevant resources. The platform allows users to form 
+            teams and work together on real-world projects, fostering learning and growth in a practical setting.
+            I contributed to the project by designing and implementing the database architecture with MongoDB, ensuring efficient data 
+            management and scalability. Additionally, I applied design thinking principles to create an intuitive and user-friendly 
+            interface, enhancing the overall user experience. The platform was successfully deployed, empowering junior developers to 
+            collaborate, learn, and build impactful projects.
+              
+            </p>
+         
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">Key Features:</h4>
+              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
+                <li>Collaborative Project Development: Enables junior developers to form teams and work on real-world projects together, promoting teamwork and skill growth.</li>
+                <li>MongoDB Database Integration: Designed and implemented a scalable database architecture to manage user data, project information, and team collaborations efficiently.</li>
+                <li>User-Friendly Interface: The platform's interface was built with a focus on usability, incorporating design thinking principles to make it easy for users to navigate and interact with.</li>
+                <li>Seamless Deployment: The platform was successfully deployed, allowing junior developers to access it anytime to collaborate on projects.</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">React</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">MongoDB</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Express</span>
+            </div>
+          </div>
+
+          <div className="flex justify-end mt-4">
+            <Button variant="ghost" size="icon">
+              <FaArrowRight className="w-4 h-4"/>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+</div>
+
+<div className="space-y-6"> 
+  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+    <CardContent className="p-4">
+    <div className="flex flex-col"> 
+       
+        <div className="w-1/3">
+          {/* <Image 
+            src={image1} 
+            alt="project 1" 
+            className="rounded-lg w-full h-48 object-cover"
+          /> */}
+        </div>
+
+       
+        <div className="w-full flex flex-col">
+          <div>
+            <h3 className="text-xl font-medium mb-2">MONI-k</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+            MONI-k is a project focused on indexing large text datasets for genetics studies. 
+            I implemented efficient data structures and algorithms in C to enhance the indexing process, 
+            enabling faster and more accurate data retrieval for genetic analysis. My work contributed to 
+            optimizing the data processing capabilities of the project, which is crucial for large-scale genomic studies.
+            Additionally, I co-authored a paper detailing the project, which was accepted for presentation at the Annual 
+            Symposium on Combinatorial Pattern Matching. This paper discusses the algorithms and data structures used in the 
+            project, showcasing our approach to improving text indexing in the context of genetics.
+            </p>
+            
+            
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">Key Features:</h4>
+              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
+                <li>Efficient Data Indexing: Developed data structures and algorithms to efficiently index large-scale genetic datasets, improving processing speed and accuracy.</li>
+                <li>Genetics-Focused Algorithms: Specialized in algorithms that optimize text indexing for genomic data, addressing the unique challenges of large genetic datasets.</li>
+                <li>Paper Publication: Co-authored a research paper accepted by the Annual Symposium on 
+                  Combinatorial Pattern Matching, contributing to the academic community.<a 
+        href="https://www.google.com" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        Annual Symposium on Combinatorial Pattern Matching
+      </a></li>
+              </ul>
+            </div>
+
+            
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">C</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Algorithm</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Data Structure</span>
+            </div>
+          </div>
+
+         
+          <div className="flex justify-end mt-4">
+            <Button variant="ghost" size="icon">
+              <FaArrowRight className="w-4 h-4"/>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+</div>
+
+<div className="space-y-6"> 
+  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+    <CardContent className="p-4">
+    <div className="flex flex-col"> 
+       
+        <div className="w-1/3">
+          {/* <Image 
+            src={image1} 
+            alt="project 1" 
+            className="rounded-lg w-full h-48 object-cover"
+          /> */}
+        </div>
+
+        <div className="w-full flex flex-col">
           <div>
             <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
@@ -291,179 +469,18 @@ export default function Home() {
 <div className="space-y-6"> 
   <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
     <CardContent className="p-4">
-      <div className="flex gap-6"> 
+    <div className="flex flex-col"> 
        
         <div className="w-1/3">
-          <Image 
+          {/* <Image 
             src={image1} 
             alt="project 1" 
             className="rounded-lg w-full h-48 object-cover"
-          />
-        </div>
-
-        <div className="w-2/3 flex flex-col">
-          <div>
-            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              A modern, responsive portfolio website built with Next.js and TailwindCSS.
-              Features dark mode, animations, and responsive design.
-              Led the developmetn of cloud of santa maria using lablab services,
-              
-            </p>
-         
-            <div className="mb-4">
-              <h4 className="font-medium mb-2">Key Features:</h4>
-              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Dark/Light mode toggle</li>
-                <li>Smooth page transitions</li>
-                <li>Responsive design for all devices</li>
-              </ul>
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
-            </div>
-          </div>
-
-          <div className="flex justify-end mt-4">
-            <Button variant="ghost" size="icon">
-              <FaArrowRight className="w-4 h-4"/>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </CardContent>
-  </Card>
-
-</div>
-
-<div className="space-y-6"> 
-  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
-    <CardContent className="p-4">
-      <div className="flex gap-6"> 
-       
-        <div className="w-1/3">
-          <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          />
+          /> */}
         </div>
 
        
-        <div className="w-2/3 flex flex-col">
-          <div>
-            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              A modern, responsive portfolio website built with Next.js and TailwindCSS.
-              Features dark mode, animations, and responsive design.
-              Led the developmetn of cloud of santa maria using lablab services,
-              
-            </p>
-            
-            
-            <div className="mb-4">
-              <h4 className="font-medium mb-2">Key Features:</h4>
-              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Dark/Light mode toggle</li>
-                <li>Smooth page transitions</li>
-                <li>Responsive design for all devices</li>
-              </ul>
-            </div>
-
-            
-            <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
-            </div>
-          </div>
-
-         
-          <div className="flex justify-end mt-4">
-            <Button variant="ghost" size="icon">
-              <FaArrowRight className="w-4 h-4"/>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </CardContent>
-  </Card>
-
-</div>
-
-<div className="space-y-6"> 
-  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
-    <CardContent className="p-4">
-      <div className="flex gap-6"> 
-       
-        <div className="w-1/3">
-          <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          />
-        </div>
-
-       
-        <div className="w-2/3 flex flex-col">
-          <div>
-            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              A modern, responsive portfolio website built with Next.js and TailwindCSS.
-              Features dark mode, animations, and responsive design.
-              Led the developmetn of cloud of santa maria using lablab services,
-              
-            </p>
-            
-            
-            <div className="mb-4">
-              <h4 className="font-medium mb-2">Key Features:</h4>
-              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Dark/Light mode toggle</li>
-                <li>Smooth page transitions</li>
-                <li>Responsive design for all devices</li>
-              </ul>
-            </div>
-
-            
-            <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
-            </div>
-          </div>
-
-         
-          <div className="flex justify-end mt-4">
-            <Button variant="ghost" size="icon">
-              <FaArrowRight className="w-4 h-4"/>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </CardContent>
-  </Card>
-
-</div>
-
-<div className="space-y-6"> 
-  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
-    <CardContent className="p-4">
-      <div className="flex gap-6"> 
-       
-        <div className="w-1/3">
-          <Image 
-            src={image1} 
-            alt="project 1" 
-            className="rounded-lg w-full h-48 object-cover"
-          />
-        </div>
-
-       
-        <div className="w-2/3 flex flex-col">
+        <div className="w-full flex flex-col">
           <div>
             <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
