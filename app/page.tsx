@@ -264,7 +264,14 @@ export default function Home() {
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
                 <li>Dark/Light Mode Toggle: Easily switch between dark and light themes for a personalized browsing experience.</li>
                 <li>Smooth Page Transitions: Seamless transitions between pages powered by Framer Motion, creating a smooth and engaging user experience.</li>
-                <li>Responsive Design: The website is fully responsive, ensuring it looks great and functions perfectly on all devices, from desktops to mobile phones.</li>
+                <li>Responsive Design: The website is fully responsive, ensuring it looks great and functions perfectly on all devices, from desktops to mobile phones.<a 
+        href="https://ardavan_portfolio.vercel.app/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        Click here
+      </a></li>
               </ul>
             </div>
 
@@ -320,9 +327,16 @@ export default function Home() {
               <h4 className="font-medium mb-2">Key Features:</h4>
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
                 <li>Collaborative Project Development: Enables junior developers to form teams and work on real-world projects together, promoting teamwork and skill growth.</li>
-                <li>MongoDB Database Integration: Designed and implemented a scalable database architecture to manage user data, project information, and team collaborations efficiently.</li>
-                <li>User-Friendly Interface: The platform's interface was built with a focus on usability, incorporating design thinking principles to make it easy for users to navigate and interact with.</li>
                 <li>Seamless Deployment: The platform was successfully deployed, allowing junior developers to access it anytime to collaborate on projects.</li>
+                <li>MongoDB Database Integration: Designed and implemented a scalable database architecture to manage user data, project information, and team collaborations efficiently.</li>
+                <li>User-Friendly Interface: The platform's interface was built with a focus on usability, incorporating design thinking principles to make it easy for users to navigate and interact with.<a 
+        href="https://junior-dev-forge.vercel.app/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        Click here
+      </a></li>
               </ul>
             </div>
 
@@ -381,12 +395,12 @@ export default function Home() {
                 <li>Genetics-Focused Algorithms: Specialized in algorithms that optimize text indexing for genomic data, addressing the unique challenges of large genetic datasets.</li>
                 <li>Paper Publication: Co-authored a research paper accepted by the Annual Symposium on 
                   Combinatorial Pattern Matching, contributing to the academic community.<a 
-        href="https://www.google.com" 
+        href="https://ui.adsabs.harvard.edu/abs/2022arXiv220205085T/abstract" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="text-blue-600 dark:text-blue-400 hover:underline"
       >
-        Annual Symposium on Combinatorial Pattern Matching
+        Click here
       </a></li>
               </ul>
             </div>
@@ -427,29 +441,35 @@ export default function Home() {
 
         <div className="w-full flex flex-col">
           <div>
-            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              A modern, responsive portfolio website built with Next.js and TailwindCSS.
-              Features dark mode, animations, and responsive design.
-              Led the developmetn of cloud of santa maria using lablab services,
-              
+            <h3 className="text-xl font-medium mb-2">Maverick</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4"> 
+            Led a 5-developer Agile team designing and implementing a task management website with RESTful API. 
+            Implemented CI/CD pipelines and runners with GitLab for reliable development, achieving 66% test coverage. 
+            Facilitated mob programming sessions to enhance code ownership among all team members. 
+            Completed the project with the highest grade in the class.      
             </p>
-            
             
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Features:</h4>
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Dark/Light mode toggle</li>
-                <li>Smooth page transitions</li>
-                <li>Responsive design for all devices</li>
+                <li>Agile Team Leadership: Led a 5-developer team using Agile methodologies, ensuring efficient collaboration and timely delivery of the task management platform.</li>
+                <li>RESTful API: Designed and implemented a RESTful API for seamless communication between the front-end and back-end of the website, ensuring smooth task management operations.</li>
+                <li>CI/CD Integration: Set up and maintained CI/CD pipelines and GitLab runners to automate testing, deployment, and integration, achieving 66% test coverage for the project.</li>
+                <li>Mob Programming: Facilitated mob programming sessions to promote team collaboration, improve code ownership, and ensure high-quality code.</li>
+                <li>Technologies Used: Developed the application with a mix of Java, Spring Boot, React, and Node.js, using JUnit and Mockito for testing, and JWT for secure user authentication.</li>
               </ul>
             </div>
 
-            
             <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Java</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Spring Boot</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">JUnit</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Mockito</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">React</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Node.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">JavaScript</span>
+
+
             </div>
           </div>
 
@@ -482,21 +502,21 @@ export default function Home() {
        
         <div className="w-full flex flex-col">
           <div>
-            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
+            <h3 className="text-xl font-medium mb-2">Academic Performance Analysis</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              A modern, responsive portfolio website built with Next.js and TailwindCSS.
-              Features dark mode, animations, and responsive design.
-              Led the developmetn of cloud of santa maria using lablab services,
-              
+            In this project, I worked with a team of three to analyze a comprehensive dataset from Kaggle, which focused on variables influencing students' academic performance. Using Python and data visualization tools, we explored and visualized the data to uncover meaningful insights.
+            I developed a linear regression model to quantify the impact of various factors, with a particular focus on mathematics performance. Our key finding was that student absences had the greatest negative impact on academic performance. Additionally, we discovered that parental support and study habits played significant roles in influencing students' success.
+            To communicate our findings, I created impactful data visualizations and presented them to the team and stakeholders. The project concluded with actionable insights that can guide educational interventions and student support strategies.
             </p>
             
             
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Features:</h4>
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Dark/Light mode toggle</li>
-                <li>Smooth page transitions</li>
-                <li>Responsive design for all devices</li>
+                <li>Linear Regression Model: Developed a linear regression model to quantify the impact of factors such as student absences, parental support, and study habits on grades.</li>
+                <li>Data Visualizations: Created compelling visualizations to communicate key findings, making complex data more accessible and understandable.</li>
+                <li>Data Analysis: Analyzed a large dataset from Kaggle to identify key variables that affect students' academic performance using Python and data visualization tools.</li>
+                <li>Key Findings: Found that student absences were the most significant negative factor affecting academic performance, while parental support and study habits contributed positively to students' success.</li>
               </ul>
             </div>
 
