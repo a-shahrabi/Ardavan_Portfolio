@@ -443,11 +443,8 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Java</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Spring Boot</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">JUnit</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">React</span>
-              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Node.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">R</span>
+             
             </div>
           </div>
 
