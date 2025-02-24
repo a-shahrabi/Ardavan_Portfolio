@@ -380,7 +380,7 @@ export default function Home() {
           <div>
             <h3 className="text-xl font-medium mb-2">Maverick</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            Led a 5-developer Agile team designing and implementing a task management website with RESTful API. 
+            Led a 5-developer agile team designing and implementing a task management website with RESTful API. 
             Implemented CI/CD pipelines and runners with GitLab for reliable development, achieving 66% test coverage. 
             Facilitated mob programming sessions to enhance code ownership among all team members. 
             Completed the project with the highest grade in the class.
@@ -389,7 +389,7 @@ export default function Home() {
             <div className="mb-4">
               <h4 className="font-medium mb-2">Key Features:</h4>
               <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Agile Team Leadership: Led a 5-developer team using Agile methodologies, ensuring efficient collaboration and timely delivery of the task management platform.</li>
+                <li>Agile Team Leadership: Led a 5-developer team using agile methodologies, ensuring efficient collaboration and timely delivery of the task management platform.</li>
                 <li>RESTful API: Designed and implemented a RESTful API for seamless communication between the front-end and back-end of the website.</li>
                 <li>CI/CD Integration: Set up and maintained CI/CD pipelines and GitLab runners to automate testing and deployment.</li>
                 <li>Mob Programming: Facilitated mob programming sessions to promote team collaboration and code ownership.</li>
