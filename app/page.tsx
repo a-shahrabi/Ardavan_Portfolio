@@ -121,6 +121,7 @@ export default function Home() {
             <div className = "flex items-centre justify-between">
               <div className="space-y-1"> 
                 <p className = "text-sm text-gray-600 dark:text-gray-400">Sep, 2020 - May, 2024</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
                 <p className = "italic">Dalhousie University</p>
                 <p className = "font-medium">Bachelor of Computer Science with honours (First Class Honours), (GPA: 3.93 / 4.3)
                  </p>
@@ -147,14 +148,19 @@ export default function Home() {
             <div className = "flex items-center justify-between"> 
               <div className = "space-y-1">
 
-                <p className = "text-sm text-gray-600 dark:text-gray-400"> Dec, 2023 - January, 2025</p>
-                <p className = "font-medium text-indigo-900">IT Help Desk</p>
-                <p className = "text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400"> Nov, 2024 - Present</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+                <p className = "font-medium text-indigo-900">Founder & Developer</p>
+                <p className = "text-black-600 dark:text-blue-400 italic">WhoRU? (Startup)</p>
               </div>
-              <p></p>
+            
             </div>
             <p className = "text-gray-600 dark:text-gray-400 text-sm">
-              text Info
+            What started as an ambitious idea in a high-pressure AI hackathon has now evolved into a full-fledged startup. Our AI-powered networking app is designed to help professionals seamlessly capture, organize, and recall key details about the people they meet.
+
+            From intelligent voice transcription to smart suggestions, we're continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
+
+            This journey began with a winning hackathon project, but our vision extends far beyond that. We’re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
             </p>
           </div>
 
@@ -163,44 +169,56 @@ export default function Home() {
               <div className = "space-y-1">
 
                 <p className = "text-sm text-gray-600 dark:text-gray-400"> Dec, 2023 - January, 2025</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
                 <p className = "font-medium text-indigo-900">IT Help Desk</p>
                 <p className = "text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
               </div>
-              <p></p>
+              
             </div>
             <p className = "text-gray-600 dark:text-gray-400 text-sm">
-              text Info
+            As an IT Support Specialist, I provided hands-on technical support, ensuring company systems ran smoothly and securely. From setting up workstations for new employees to troubleshooting software and hardware issues, I worked to maintain a seamless digital workspace.
+
+            Beyond solving immediate technical problems, I focused on empowering users. I developed an internal knowledge base with 10+ step-by-step user guides covering essential IT procedures, from printer setup to remote access. Additionally, I led bi-weekly training sessions for teams of 5-10 employees, equipping them with the skills to navigate Microsoft Office and company-specific software confidently.
+
+            By combining technical expertise with user education, I helped bridge the gap between IT and everyday workflows—making technology more accessible, efficient, and secure.
             </p>
           </div>
 
           <div className = "space-y-2">
             <div className = "flex items-center justify-between"> 
               <div className = "space-y-1">
-
-                <p className = "text-sm text-gray-600 dark:text-gray-400"> Dec, 2023 - January, 2025</p>
-                <p className = "font-medium text-indigo-900">IT Help Desk</p>
-                <p className = "text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400"> Feb, 2023 - Aug, 2023</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+                <p className = "font-medium text-indigo-900">Research Assistant</p>
+                <p className = "text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
               </div>
-              <p></p>
+              
             </div>
             <p className = "text-gray-600 dark:text-gray-400 text-sm">
-              text Info
+            As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
+
+            By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
+
+            This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
             </p>
           </div>
 
           <div className = "space-y-2">
             <div className = "flex items-center justify-between"> 
               <div className = "space-y-1">
-                <p className = "text-sm text-gray-600 dark:text-gray-400"> Dec, 2023 - January, 2025</p>
-                <p className = "font-medium text-indigo-900">IT Help Desk</p>
-                <p className = "text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400"> June, 2023 - Oct, 2023</p>
+                <p className = "text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+                <p className = "font-medium text-indigo-900">Student Coordinator at Shiftkey Lab (Volunteer)</p>
+                <p className = "text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
               </div>
-              <p></p>
+              
             </div>
             <p className = "text-gray-600 dark:text-gray-400 text-sm">
-              Led the developmetn of cloud of santa maria using lablab services,
-              established auto CI/CD pipelines and automated deployment processes, 
-              resulting in 60% faster release cycles
+            As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
+
+            By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
+
+            This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
             </p>
           </div>
 
@@ -257,7 +275,58 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Arrow button */}
+         
+          <div className="flex justify-end mt-4">
+            <Button variant="ghost" size="icon">
+              <FaArrowRight className="w-4 h-4"/>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+</div>
+
+<div className="space-y-6"> 
+  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+    <CardContent className="p-4">
+      <div className="flex gap-6"> 
+       
+        <div className="w-1/3">
+          <Image 
+            src={image1} 
+            alt="project 1" 
+            className="rounded-lg w-full h-48 object-cover"
+          />
+        </div>
+
+        <div className="w-2/3 flex flex-col">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              A modern, responsive portfolio website built with Next.js and TailwindCSS.
+              Features dark mode, animations, and responsive design.
+              Led the developmetn of cloud of santa maria using lablab services,
+              
+            </p>
+         
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">Key Features:</h4>
+              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
+                <li>Dark/Light mode toggle</li>
+                <li>Smooth page transitions</li>
+                <li>Responsive design for all devices</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
+            </div>
+          </div>
+
           <div className="flex justify-end mt-4">
             <Button variant="ghost" size="icon">
               <FaArrowRight className="w-4 h-4"/>
@@ -312,7 +381,117 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Arrow button */}
+         
+          <div className="flex justify-end mt-4">
+            <Button variant="ghost" size="icon">
+              <FaArrowRight className="w-4 h-4"/>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+</div>
+
+<div className="space-y-6"> 
+  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+    <CardContent className="p-4">
+      <div className="flex gap-6"> 
+       
+        <div className="w-1/3">
+          <Image 
+            src={image1} 
+            alt="project 1" 
+            className="rounded-lg w-full h-48 object-cover"
+          />
+        </div>
+
+       
+        <div className="w-2/3 flex flex-col">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              A modern, responsive portfolio website built with Next.js and TailwindCSS.
+              Features dark mode, animations, and responsive design.
+              Led the developmetn of cloud of santa maria using lablab services,
+              
+            </p>
+            
+            
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">Key Features:</h4>
+              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
+                <li>Dark/Light mode toggle</li>
+                <li>Smooth page transitions</li>
+                <li>Responsive design for all devices</li>
+              </ul>
+            </div>
+
+            
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
+            </div>
+          </div>
+
+         
+          <div className="flex justify-end mt-4">
+            <Button variant="ghost" size="icon">
+              <FaArrowRight className="w-4 h-4"/>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+</div>
+
+<div className="space-y-6"> 
+  <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+    <CardContent className="p-4">
+      <div className="flex gap-6"> 
+       
+        <div className="w-1/3">
+          <Image 
+            src={image1} 
+            alt="project 1" 
+            className="rounded-lg w-full h-48 object-cover"
+          />
+        </div>
+
+       
+        <div className="w-2/3 flex flex-col">
+          <div>
+            <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              A modern, responsive portfolio website built with Next.js and TailwindCSS.
+              Features dark mode, animations, and responsive design.
+              Led the developmetn of cloud of santa maria using lablab services,
+              
+            </p>
+            
+            
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">Key Features:</h4>
+              <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
+                <li>Dark/Light mode toggle</li>
+                <li>Smooth page transitions</li>
+                <li>Responsive design for all devices</li>
+              </ul>
+            </div>
+
+            
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
+              <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
+            </div>
+          </div>
+
+         
           <div className="flex justify-end mt-4">
             <Button variant="ghost" size="icon">
               <FaArrowRight className="w-4 h-4"/>
