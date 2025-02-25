@@ -238,7 +238,7 @@ export default function Home() {
                 <li>Dark/Light Mode Toggle: Easily switch between dark and light themes for a personalized browsing experience.</li>
                 <li>Smooth Page Transitions: Seamless transitions between pages powered by Framer Motion, creating a smooth and engaging user experience.</li>
                 <li>Responsive Design: The website is fully responsive, ensuring it looks great and functions perfectly on all devices, from desktops to mobile phones.<a 
-        href="https://ardavan_portfolio.vercel.app/" 
+        href="https://ardavan-portfolio.vercel.app/" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="text-blue-600 dark:text-blue-400 hover:underline"
