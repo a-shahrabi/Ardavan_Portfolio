@@ -145,7 +145,14 @@ export default function Home() {
 
             From intelligent voice transcription to smart suggestions, we&apos;re continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
 
-            This journey began with a winning hackathon project, but our vision extends far beyond that. We&apos;re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
+            This journey began with a winning hackathon project, but our vision extends far beyond that. We&apos;re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.<a 
+        href="https://agentic-ai-hackathon.vercel.app/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        Click here
+      </a> 
             </p>
           </div>
 
