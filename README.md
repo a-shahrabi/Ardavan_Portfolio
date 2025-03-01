@@ -1,3 +1,10 @@
+Welcome to my GitHub Portfolio!
+
+This repository showcases a collection of my projects, highlighting my journey as a developer. Here, you’ll find a diverse range of work including full-stack applications, front-end designs, back-end services, and other creative coding projects. Each project reflects my commitment to building scalable, clean, and efficient code, using a variety of technologies like JavaScript, Node.js, React, Express, and more.
+
+I’m passionate about solving real-world problems with technology, continuously learning new tools, and collaborating on exciting projects. Feel free to explore my code, contribute, or reach out for potential collaborations!
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
