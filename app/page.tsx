@@ -158,6 +158,20 @@ export default function Home() {
       </CardContent>
     </Card>
 
+    {/* Backend */}
+    <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105">
+      <CardContent className="p-4">
+        <h3 className="text-xl font-medium mb-4">Backend & Databases</h3>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Node.js</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Express</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">MongoDB</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">SQL</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Spring Boot</span>
+        </div>
+      </CardContent>
+    </Card>
+
     
 
   </motion.section>
