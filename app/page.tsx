@@ -172,7 +172,20 @@ export default function Home() {
       </CardContent>
     </Card>
 
-    
+    {/* DevOps & Tools */}
+    <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105">
+      <CardContent className="p-4">
+        <h3 className="text-xl font-medium mb-4">DevOps & Tools</h3>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Git</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">CI/CD</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Docker</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">GitLab</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Agile/Scrum</span>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
 
   </motion.section>
           </section>
