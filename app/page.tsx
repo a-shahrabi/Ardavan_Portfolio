@@ -128,6 +128,38 @@ export default function Home() {
     Skills & Technologies
   </h2>
 
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {/* Programming Languages */}
+    <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105">
+      <CardContent className="p-4">
+        <h3 className="text-xl font-medium mb-4">Programming Languages</h3>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">JavaScript</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">TypeScript</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Python</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Java</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">C</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">R</span>
+        </div>
+      </CardContent>
+    </Card>
+
+     {/* Frontend */}
+     <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105">
+      <CardContent className="p-4">
+        <h3 className="text-xl font-medium mb-4">Frontend</h3>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">React</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Next.js</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">TailwindCSS</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">Framer Motion</span>
+          <span className="px-3 py-2 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm">HTML/CSS</span>
+        </div>
+      </CardContent>
+    </Card>
+
+    
+
   </motion.section>
           </section>
           <motion.section 
