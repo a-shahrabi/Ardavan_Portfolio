@@ -562,7 +562,7 @@ export default function Home() {
 
             <footer className="mt-20 pb-8">
               <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                © 2024 Ardavan Shahrabi. Built with Next.js and TailwindCSS. All rights reserved.
+                © 2024 Ardavan Shahrabi. Built with Next.js, TailwindCSS and framer motion. All rights reserved.
               </p>
             </footer>
           </motion.section>
