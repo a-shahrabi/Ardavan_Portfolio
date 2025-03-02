@@ -10,16 +10,26 @@ import HoverMenu from "../components/HoverMenu";
 
 
 export default function Home() {
-  
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+      <div className="fixed top-0 left-0 right-0 h-1 z-50">
+        <motion.div 
+          className="h-full bg-blue-600 dark:bg-blue-400"
+          style={{ 
+            scaleX: scrollYProgress,
+            transformOrigin: "0%" 
+          }}
+        />
+      </div>
       <div className="mx-auto max-w-xl px-4 py-20">
         {/* Single header - removed duplicate */}
         <motion.header 
           initial={{opacity: 0, x: -100}}
           animate={{opacity: 1, x: 0}}
           transition={{duration: 0.8}} 
-          className="flex items-center justify-between mb-12 sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4"
+          className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4"
         >
           <div className="w-20 h-20 rounded-full overflow-hidden">
             <Image 
