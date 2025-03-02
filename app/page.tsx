@@ -17,7 +17,7 @@ export default function Home() {
           initial={{opacity: 0, x: -100}}
           animate={{opacity: 1, x: 0}}
           transition={{duration: 0.8}} 
-          className="flex items-center justify-between mb-12"
+          className="flex items-center justify-between mb-12 sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4"
         >
           <div className="w-20 h-20 rounded-full overflow-hidden">
             <Image 
