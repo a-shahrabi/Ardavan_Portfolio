@@ -127,8 +127,8 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
   {[
     { value: '3+', label: 'Years Experience' },
-    { value: '10+', label: 'Projects Completed' },
-    { value: '5+', label: 'Technologies' },
+    { value: '5+', label: 'Projects Completed' },
+    { value: '10+', label: 'Technologies' },
     { value: '1', label: 'Hackathon Win' }
   ].map((stat, i) => (
     <motion.div 
