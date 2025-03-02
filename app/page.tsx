@@ -65,7 +65,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-          //
+          id="about"
           initial = {{opacity: 0, x: -100}}
           animate = {{opacity: 1, x: 0}}
           transition = {{duration: 0.8}}
