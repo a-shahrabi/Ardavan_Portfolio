@@ -645,7 +645,7 @@ export default function Home() {
               type="email"
               id="email"
               name="email"
-              className="w-full px-5 py-3 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 outline-none transition-colors"
+              className="w-full px-5 py-3 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 outline-none transition-colors text-base"
               placeholder="Ardavan.shahrabi@gmail.com"
             />
           </div>
@@ -659,7 +659,7 @@ export default function Home() {
             type="text"
             id="subject"
             name="subject"
-            className="w-full px-5 py-3 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 outline-none transition-colors"
+            className="w-full px-5 py-3 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 outline-none transition-colors text-base"
             placeholder="How can I help you?"
           />
         </div>
