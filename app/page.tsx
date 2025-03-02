@@ -572,11 +572,13 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
     {/* Contact Info - with more padding on the right */}
     <div className="space-y-6 pr-4 md:pr-8">
-      <p className="text-gray-600 dark:text-gray-400">
-        I'm open to new opportunities, collaborations, and interesting projects. 
-        Whether you have a question or just want to say hi, I'll do my best to get back to you as soon as possible!
-      </p>
-      
+  <p className="text-gray-600 dark:text-gray-400 p-4 bg-gray-50 dark:bg-zinc-900/50 rounded-lg border border-gray-100 dark:border-zinc-800 leading-relaxed">
+  I'm open to new opportunities, collaborations, and interesting projects. 
+  Whether you have a question or just want to say hi, I'll do my best to get back to you as soon as possible!
+  </p>
+  
+
+</div>
       <div className="space-y-4 mt-8">
         <div className="flex items-center space-x-3">
           <div className="bg-gray-100 dark:bg-zinc-800 p-3 rounded-full">
