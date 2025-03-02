@@ -7,10 +7,26 @@ import Link from "next/link";
 import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
 import HoverMenu from "../components/HoverMenu";
+import { useState, useEffect } from 'react';
+import { FaArrowUp } from "react-icons/fa";
 
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
@@ -22,6 +38,16 @@ export default function Home() {
             transformOrigin: "0%" 
           }}
         />
+        {showBackToTop && (
+          <motion.button
+            initial={{opacity: 0, scale: 0.8}}
+            animate={{opacity: 1, scale: 1}}
+            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+            className="fixed bottom-8 right-8 p-3 rounded-full bg-blue-600 text-white shadow-lg z-40"
+          >
+            <FaArrowUp />
+          </motion.button>
+        )}
       </div>
       <div className="mx-auto max-w-xl px-4 py-20">
         {/* Single header - removed duplicate */}
