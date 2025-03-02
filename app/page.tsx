@@ -68,13 +68,15 @@ export default function Home() {
           className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4"
         >
           <div className="w-20 h-20 rounded-full overflow-hidden">
-            <Image 
-              src="/1.jpeg"  
-              alt="profile picture" 
-              className="cursor-pointer transition-all duration-300 hover:scale-110"
-              width={100}  
-              height={100} 
-            />
+          <Image 
+  src="/1.jpeg"  
+  alt="Profile picture of Ardavan Shahrabi"  // More descriptive alt text
+  className="cursor-pointer transition-all duration-300 hover:scale-110"
+  width={100}  
+  height={100}
+  priority  
+  quality={90}  // Higher quality for your profile picture
+/>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -150,12 +152,19 @@ export default function Home() {
               className="flex items-center space-x-4"
             >
               <Button 
-                onClick={() => window.open('/resume.pdf', '_blank')}
-                className="rounded-full !bg-gradient-to-r !from-slate-900 !to-blue-700 text-white transition-transform hover:scale-105"
-              >
-                Resume
-              </Button>
-              <motion.div
+      onClick={() => window.open('/resume.pdf', '_blank')}
+      className="rounded-full !bg-gradient-to-r !from-slate-900 !to-blue-700 text-white transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 dark:focus:ring-offset-black"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          window.open('/resume.pdf', '_blank');
+        }
+      }}
+      aria-label="Download Resume"
+        tabIndex={0}
+      >
+        Resume
+      </Button>
+                    <motion.div
   whileHover={{ scale: 1.2, rotate: 5 }}
   whileTap={{ scale: 0.9 }}
 >
