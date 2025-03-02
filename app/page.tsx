@@ -131,18 +131,20 @@ export default function Home() {
     >
       <FaGithub className="w-6 h-6"/>
     </Link>
-      </motion.div>
-      <motion.div
-  whileHover={{ scale: 1.2, rotate: 5 }}
-  whileTap={{ scale: 0.9 }}
->
-  <Link 
+
+    <Link 
     href="https://www.linkedin.com/in/a-shahrabi/" 
     target="_blank" 
     className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
   >
     <FaLinkedin className="w-6 h-6"/>
   </Link>
+      </motion.div>
+      <motion.div
+  whileHover={{ scale: 1.2, rotate: 5 }}
+  whileTap={{ scale: 0.9 }}
+>
+  
 </motion.div>
             </motion.div>
 
