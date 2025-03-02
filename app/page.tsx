@@ -1,14 +1,16 @@
 "use client"
 import Image from "next/image";
 import ThemeToggle from '../components/ui/theme-toggle';
-import {motion} from 'framer-motion'
+import {motion, useScroll} from 'framer-motion'
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
 import HoverMenu from "../components/HoverMenu";
 
+
 export default function Home() {
+  
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <div className="mx-auto max-w-xl px-4 py-20">
