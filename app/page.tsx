@@ -122,6 +122,27 @@ export default function Home() {
               </h2>
             </motion.div>
 
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+  {[
+    { value: '3+', label: 'Years Experience' },
+    { value: '10+', label: 'Projects Completed' },
+    { value: '5+', label: 'Technologies' },
+    { value: '1', label: 'Hackathon Win' }
+  ].map((stat, i) => (
+    <motion.div 
+      key={i}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: i * 0.1 }}
+      viewport={{ once: true }}
+      className="bg-gray-50 dark:bg-zinc-900 p-4 rounded-lg text-center"
+    >
+      <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">{stat.value}</p>
+      <p className="text-gray-600 dark:text-gray-400 text-sm">{stat.label}</p>
+    </motion.div>
+  ))}
+</div>
+
             <motion.div
               initial={{opacity: 0, x: 50}}
               animate={{opacity: 1, x: 0}}
