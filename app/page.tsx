@@ -14,6 +14,8 @@ import { FaArrowUp } from "react-icons/fa";
 export default function Home() {
 
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [filter, setFilter] = useState('all');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -118,12 +120,30 @@ export default function Home() {
               >
                 Resume
               </Button>
-              <Link href="https://github.com/a-shahrabi/" target="_blank" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
-                <FaGithub className="w-6 h-6"/>
-              </Link>
-              <Link href="https://www.linkedin.com/in/a-shahrabi/" target="_blank" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
-                <FaLinkedin className="w-6 h-6"/>
-              </Link>
+              <motion.div
+  whileHover={{ scale: 1.2, rotate: 5 }}
+  whileTap={{ scale: 0.9 }}
+>
+    <Link 
+      href="https://github.com/a-shahrabi/" 
+      target="_blank" 
+      className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+    >
+      <FaGithub className="w-6 h-6"/>
+    </Link>
+      </motion.div>
+      <motion.div
+  whileHover={{ scale: 1.2, rotate: 5 }}
+  whileTap={{ scale: 0.9 }}
+>
+  <Link 
+    href="https://www.linkedin.com/in/a-shahrabi/" 
+    target="_blank" 
+    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+  >
+    <FaLinkedin className="w-6 h-6"/>
+  </Link>
+</motion.div>
             </motion.div>
 
             <motion.section 
