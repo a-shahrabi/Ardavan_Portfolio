@@ -573,8 +573,8 @@ export default function Home() {
     {/* Contact Info - with more padding on the right */}
     <div className="space-y-6 pr-4 md:pr-8">
       <p className="text-gray-600 dark:text-gray-400">
-        I'm always open to new opportunities, collaborations, and interesting projects. 
-        Whether you have a question or just want to say hi, I'll do my best to get back to you!
+        I'm open to new opportunities, collaborations, and interesting projects. 
+        Whether you have a question or just want to say hi, I'll do my best to get back to you as soon as possible!
       </p>
       
       <div className="space-y-4 mt-8">
@@ -624,7 +624,7 @@ export default function Home() {
       <form action="https://formspree.io/f/mkgodzzb" 
   method="POST" 
    className="space-y-4">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="space-y-">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Name
