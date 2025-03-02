@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button";
 import  Link  from "next/link";
 import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
+import dynamic from 'next/dynamic'
+
+
+
 
 export default function Home() {
   return (
@@ -32,6 +36,16 @@ export default function Home() {
           </div>
           
         </motion.header>
+
+        <motion.header initial={{opacity: 0, x: -100}}
+  animate={{opacity: 1, x: 0}}
+  transition={{duration: 0.8}} className="flex items-center justify-between mb-12">
+  {/* Your existing header content */}
+</motion.header>
+
+
+
+
         <main className = "space-y-10">
           <section className = "space-y-10">
 
