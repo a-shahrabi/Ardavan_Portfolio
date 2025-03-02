@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import  Link  from "next/link";
 import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
-import dynamic from 'next/dynamic'
+import HoverMenu from "../components/HoverMenu";
 
 
 
@@ -16,32 +16,33 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <div className="mx-auto max-w-xl px-4 py-20">
-        <motion.header initial = {{opacity: 0, x: -100}}
-        animate = {{opacity: 1, x: 0}}
-        transition = {{duration: 0.8}} className="flex items-center justify-between mb-12">
-
-
-          <div className="w-20 h-20 rounded-full overflow-hidden">
-            <Image 
-              src="/1.jpeg"  
-              alt="profile picture" 
-              className="cursor-pointer transition-all duration-300 hover:scale-110"
-              width={100}  
-              height={100} 
-            />
-          </div>
-          
-          <div className="cursor-pointer">
-            <ThemeToggle/>
-          </div>
-          
-        </motion.header>
+      <motion.header initial = {{opacity: 0, x: -100}}
+  animate = {{opacity: 1, x: 0}}
+  transition = {{duration: 0.8}} className="flex items-center justify-between mb-12">
+  <div className="w-20 h-20 rounded-full overflow-hidden">
+    <Image 
+      src="/1.jpeg"  
+      alt="profile picture" 
+      className="cursor-pointer transition-all duration-300 hover:scale-110"
+      width={100}  
+      height={100} 
+    />
+  </div>
+  
+  <div className="flex items-center space-x-4">
+    <HoverMenu />
+    <div className="cursor-pointer">
+      <ThemeToggle/>
+    </div>
+  </div>
+  
+</motion.header>
 
         <motion.header initial={{opacity: 0, x: -100}}
-  animate={{opacity: 1, x: 0}}
-  transition={{duration: 0.8}} className="flex items-center justify-between mb-12">
-  {/* Your existing header content */}
-</motion.header>
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 0.8}} className="flex items-center justify-between mb-12">
+        {/* Your existing header content */}
+       </motion.header>
 
 
 
@@ -64,6 +65,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
+          //
           initial = {{opacity: 0, x: -100}}
           animate = {{opacity: 1, x: 0}}
           transition = {{duration: 0.8}}
@@ -109,6 +111,7 @@ export default function Home() {
           </motion.div>
 
           <motion.section 
+          //
           initial = {{opacity: 0, y: 100}}
           animate = {{opacity: 1, y: 0}}
           transition = {{duration: 0.8}}
@@ -134,12 +137,13 @@ export default function Home() {
 
           </motion.section>
 
-          <motion.section 
-  initial={{opacity: 0, y: 100}}
-  animate={{opacity: 1, y: 0}}
-  transition={{duration: 0.8}}
-  className="space-y-8"
->
+          <motion.section
+          // 
+        initial={{opacity: 0, y: 100}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 0.8}}
+        className="space-y-8"
+      >
   <h2 className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block mb-6">
     Skills & Technologies
   </h2>
@@ -206,6 +210,7 @@ export default function Home() {
   </motion.section>
           </section>
           <motion.section 
+          //
           initial = {{opacity: 0, y: 100}}
           animate = {{opacity: 1, y: 0}}
           transition = {{duration: 0.8}}
@@ -303,6 +308,7 @@ export default function Home() {
           </motion.section>
 
           <motion.section 
+          
   initial={{opacity: 0, y: 100}}
   animate={{opacity: 1, y: 0}}
   transition={{duration: 0.8}}
