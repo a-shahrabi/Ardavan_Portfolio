@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import ThemeToggle from '../components/ui/theme-toggle';
-import {motion, useScroll} from 'framer-motion'
+import {motion} from 'framer-motion'
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -12,7 +12,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
+
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
@@ -30,14 +30,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
-      <div className="fixed top-0 left-0 right-0 h-1 z-50">
-        <motion.div 
-          className="h-full bg-blue-600 dark:bg-blue-400"
-          style={{ 
-            scaleX: scrollYProgress,
-            transformOrigin: "0%" 
-          }}
-        />
+      
+       
         {showBackToTop && (
           <motion.button
             initial={{opacity: 0, scale: 0.8}}
@@ -48,7 +42,7 @@ export default function Home() {
             <FaArrowUp />
           </motion.button>
         )}
-      </div>
+      
       <div className="mx-auto max-w-xl px-4 py-20">
         {/* Single header - removed duplicate */}
         <motion.header 
@@ -230,95 +224,106 @@ export default function Home() {
           </section>
 
           <motion.section 
-            id="experience"
-            initial={{opacity: 0, y: 100}}
-            animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.8}}
-            className="space-y-8"
-          >
-            <h2 className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block">
-              Experience
-            </h2>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between"> 
-                <div className="space-y-1">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Nov, 2024 - Present</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-                  <p className="font-medium text-indigo-900">Founder & Developer</p>
-                  <p className="text-black-600 dark:text-blue-400 italic">WhoRU? (Startup)</p>
-                </div>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                What started as an ambitious idea in a high-pressure AI hackathon has now evolved into a full-fledged startup. Our AI-powered networking app is designed to help professionals seamlessly capture, organize, and recall key details about the people they meet.
+  id="experience"
+  initial={{opacity: 0, y: 100}}
+  animate={{opacity: 1, y: 0}}
+  transition={{duration: 0.8}}
+  className="space-y-8"
+>
+  <h2 className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block">
+    Experience
+  </h2>
+  
+  <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-6">
+    {/* WhoRU Startup Experience */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Nov, 2024 - Present</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Founder & Developer</p>
+        <p className="text-black-600 dark:text-blue-400 italic">WhoRU? (Startup)</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        What started as an ambitious idea in a high-pressure AI hackathon has now evolved into a full-fledged startup. Our AI-powered networking app is designed to help professionals seamlessly capture, organize, and recall key details about the people they meet.
 
-                From intelligent voice transcription to smart suggestions, we&apos;re continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
+        From intelligent voice transcription to smart suggestions, we&apos;re continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
 
-                This journey began with a winning hackathon project, but our vision extends far beyond that. We&apos;re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
-                <a 
-                  href="https://agentic-ai-hackathon.vercel.app/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  Click here
-                </a> 
-              </p>
-            </div>
+        This journey began with a winning hackathon project, but our vision extends far beyond that. We&apos;re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
+        <a 
+          href="https://agentic-ai-hackathon.vercel.app/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-blue-600 dark:text-blue-400 hover:underline"
+        >
+          Click here
+        </a> 
+      </p>
+    </div>
+    
+    {/* IT Help Desk Experience */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Dec, 2023 - January, 2025</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">IT Help Desk</p>
+        <p className="text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        As an IT Support Specialist, I provided hands-on technical support, ensuring company systems ran smoothly and securely. From setting up workstations for new employees to troubleshooting software and hardware issues, I worked to maintain a seamless digital workspace.
 
-            <div className="space-y-2">
-              <div className="flex items-center justify-between"> 
-                <div className="space-y-1">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Dec, 2023 - January, 2025</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-                  <p className="font-medium text-indigo-900">IT Help Desk</p>
-                  <p className="text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
-                </div>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                As an IT Support Specialist, I provided hands-on technical support, ensuring company systems ran smoothly and securely. From setting up workstations for new employees to troubleshooting software and hardware issues, I worked to maintain a seamless digital workspace.
+        Beyond solving immediate technical problems, I focused on empowering users. I developed an internal knowledge base with 10+ step-by-step user guides covering essential IT procedures, from printer setup to remote access. Additionally, I led bi-weekly training sessions for teams of 5-10 employees, equipping them with the skills to navigate Microsoft Office and company-specific software confidently.
 
-                Beyond solving immediate technical problems, I focused on empowering users. I developed an internal knowledge base with 10+ step-by-step user guides covering essential IT procedures, from printer setup to remote access. Additionally, I led bi-weekly training sessions for teams of 5-10 employees, equipping them with the skills to navigate Microsoft Office and company-specific software confidently.
+        By combining technical expertise with user education, I helped bridge the gap between IT and everyday workflows—making technology more accessible, efficient, and secure.
+      </p>
+    </div>
+    
+    {/* Research Assistant Experience */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Feb, 2023 - Aug, 2023</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Research Assistant</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
 
-                By combining technical expertise with user education, I helped bridge the gap between IT and everyday workflows—making technology more accessible, efficient, and secure.
-              </p>
-            </div>
+        By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
 
-            <div className="space-y-2">
-              <div className="flex items-center justify-between"> 
-                <div className="space-y-1">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Feb, 2023 - Aug, 2023</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-                  <p className="font-medium text-indigo-900">Research Assistant</p>
-                  <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
-                </div>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
+        This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
+      </p>
+    </div>
+    
+    {/* Student Coordinator Experience */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">June, 2023 - Oct, 2023</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Student Coordinator at Shiftkey Lab (Volunteer)</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
 
-                By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
+        By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
 
-                This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <div className="flex items-center justify-between"> 
-                <div className="space-y-1">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">June, 2023 - Oct, 2023</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-                  <p className="font-medium text-indigo-900">Student Coordinator at Shiftkey Lab (Volunteer)</p>
-                  <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
-                </div>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
-
-                By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
-
-                This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
-              </p>
-            </div>
-          </motion.section>
+        This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
+      </p>
+    </div>
+  </div>
+</motion.section>
 
           <motion.section 
             id="projects"
