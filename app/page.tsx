@@ -621,7 +621,9 @@ export default function Home() {
     
     {/* Contact Form - with left padding for more separation */}
     <div className="pl-0 md:pl-4">
-      <form className="space-y-4">
+      <form action="https://formspree.io/f/mkgodzzb" 
+  method="POST" 
+   className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -683,6 +685,8 @@ export default function Home() {
             Send Message
           </button>
         </div>
+        <input type="hidden" name="_next" value="https://www.ardavan-portfolio.vercel.app/thank-you" />
+
       </form>
     </div>
   </div>
