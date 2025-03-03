@@ -12,6 +12,7 @@ const HoverMenu = () => {
     { title: 'Experience', href: '#experience', icon: '💼' },
     { title: 'Projects', href: '#projects', icon: '🚀' },
     { title: 'Skills', href: '#skills', icon: '🛠️' },
+    { title: 'Blog', href: '/blog', icon: '✍️' }, 
     { title: 'Contact', href: '#contact', icon: '📬' },
   ]
   
