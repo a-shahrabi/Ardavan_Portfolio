@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'blogposts', `${slug}.mdx`);
   

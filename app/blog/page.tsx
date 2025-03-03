@@ -1,32 +1,19 @@
+"use client"
 
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function BlogPage() {
-  // Get all posts
-  const postsDirectory = path.join(process.cwd(), 'blogposts');
-  const filenames = fs.readdirSync(postsDirectory);
+  const [posts, setPosts] = useState([]);
   
-  const posts = filenames.map(filename => {
-    const filePath = path.join(postsDirectory, filename);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const { data } = matter(fileContents);
-    
-    return {
-      slug: filename.replace('.mdx', ''),
-      title: data.title,
-      date: data.date,
-      description: data.description,
-    };
-  });
-  
-  // Sort posts by date (newest first)
-  const sortedPosts = posts.sort((a, b) => 
-    new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  useEffect(() => {
+    // Fetch posts on the client side
+    fetch('/api/posts')
+      .then(response => response.json())
+      .then(data => setPosts(data))
+      .catch(error => console.error('Error fetching posts:', error));
+  }, []);
   
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
@@ -41,7 +28,7 @@ export default function BlogPage() {
         </motion.h1>
         
         <div className="space-y-8">
-          {sortedPosts.map((post) => (
+          {posts.map((post) => (
             <motion.div
               key={post.slug}
               initial={{ opacity: 0, y: 20 }}
