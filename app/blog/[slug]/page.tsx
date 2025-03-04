@@ -15,8 +15,14 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function BlogPostPage({ 
+  params 
+}: { 
+  params: { 
+    slug: string
+  } 
+}) {
+  const slug = params.slug;
   const post = await getPostBySlug(slug);
   
   if (!post) {
