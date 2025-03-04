@@ -43,6 +43,24 @@ A modern, responsive portfolio website built with Next.js, React, TailwindCSS, a
    cd portfolio
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Project Structure:
+
+portfolio/
+├── app/                # Next.js App Router
+│   ├── blog/           # Blog pages
+│   │   └── [slug]/     # Individual blog post pages
+│   ├── actions/        # Server actions
+│   └── page.tsx        # Home page
+├── components/         # React components
+│   ├── ui/             # UI components
+│   ├── BlogCard.tsx    # Blog card component
+│   └── HoverMenu.tsx   # Navigation menu
+├── content/            # Content files
+│   └── blog/           # Blog posts in MDX format
+├── public/             # Static assets
+│   └── blog/           # Blog images
+└── styles/             # Global styles
+
 ## Getting Started
 
 First, run the development server:
