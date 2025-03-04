@@ -5,6 +5,42 @@ This repository showcases a collection of my projects, highlighting my journey a
 I’m passionate about solving real-world problems with technology, continuously learning new tools, and collaborating on exciting projects. Feel free to explore my code, contribute, or reach out for potential collaborations!
 
 
+
+A modern, responsive portfolio website built with Next.js, React, TailwindCSS, and Framer Motion. This portfolio showcases my skills, projects, experience, and now includes a blog feature.
+
+
+## Features
+
+- **Responsive Design**: Looks great on all devices from mobile to desktop
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Interactive UI**: Smooth animations and transitions using Framer Motion
+- **Blog System**: MDX-powered blog with code syntax highlighting
+- **Contact Form**: Integrated contact form for easy communication
+- **Modern Stack**: Built with Next.js, TailwindCSS, and TypeScript
+
+## Tech Stack
+
+- **Framework**: Next.js 15.x (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Content**: MDX for blog posts
+- **Form Handling**: Formspree
+- **Deployment**: Vercel
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/a-shahrabi/portfolio.git
+   cd portfolio
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
