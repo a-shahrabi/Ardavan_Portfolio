@@ -14,15 +14,9 @@ export async function generateStaticParams() {
   }));
 }
 
-interface PageProps {
-  params: {
-    slug: string;
-  }
-}
-
-export default async function BlogPostPage(props: PageProps) {
-  const slug = props.params.slug;
-  const post = await getPostBySlug(slug);
+export default async function BlogPostPage({ params }: { params: any }) {
+  const slug = params.slug;
+  const post = await getPostBySlug(slug)
   
   if (!post) {
     notFound();
@@ -37,7 +31,7 @@ export default async function BlogPostPage(props: PageProps) {
             <div className="w-20 h-20 rounded-full overflow-hidden">
               <Image
                 src="/1.jpeg"
-                alt="Profile picture of Ardavan Shahrabi"
+                alt="Profile picture"
                 className="cursor-pointer transition-all duration-300 hover:scale-110"
                 width={100}
                 height={100}
