@@ -766,7 +766,7 @@ export default function Home() {
                   <div>
                   <button
   type="submit"
-  disabled={isSubmitting}  /* Add this */
+  disabled={isSubmitting}  
   className="rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-slate-800 text-white px-6 py-2 transition-transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"  /* Add disabled styles */
 >
   {isSubmitting ? (  /* Replace button text with conditional */
