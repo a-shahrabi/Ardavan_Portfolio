@@ -1,53 +1,118 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import { getPostBySlug, getAllPosts } from '../../actions/blog';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import { FaArrowLeft } from 'react-icons/fa';
+import HoverMenu from '../../../components/HoverMenu';
+import ThemeToggle from '../../../components/ui/theme-toggle';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-// Generate static paths at build time
 export async function generateStaticParams() {
-  const postsDirectory = path.join(process.cwd(), 'blogposts');
-  const filenames = fs.readdirSync(postsDirectory);
-  
-  return filenames.map(filename => ({
-    slug: filename.replace('.mdx', '')
+  const posts = await getAllPosts();
+
+  return posts.map((post) => ({
+    slug: post.slug,
   }));
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
-  const filePath = path.join(process.cwd(), 'blogposts', `${slug}.mdx`);
+  const post = await getPostBySlug(slug);
   
-  // Check if file exists
-  if (!fs.existsSync(filePath)) {
-    return notFound();
+  if (!post) {
+    notFound();
   }
-  
-  // Get file content
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const { data, content } = matter(fileContents);
-  
+
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
-      <div className="mx-auto max-w-xl px-4 py-20">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">{data.title}</h1>
-          <p className="text-gray-500 dark:text-gray-400 text-sm">{new Date(data.date).toLocaleDateString()}</p>
-        </div>
-        
-        <article className="prose prose-blue dark:prose-invert max-w-none">
-          <MDXRemote source={content} />
-        </article>
-        
-        <div className="mt-12">
-          <Link 
-            href="/blog"
-            className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
-          >
-            ← Back to all posts
+      <div className="mx-auto max-w-3xl px-4 py-20">
+        {/* Header */}
+        <header className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4">
+          <Link href="/">
+            <div className="w-20 h-20 rounded-full overflow-hidden">
+              <Image
+                src="/1.jpeg"
+                alt="Profile picture of Ardavan Shahrabi"
+                className="cursor-pointer transition-all duration-300 hover:scale-110"
+                width={100}
+                height={100}
+                priority
+                quality={90}
+              />
+            </div>
           </Link>
-        </div>
+
+          <div className="flex items-center space-x-4">
+            <HoverMenu />
+            <div className="cursor-pointer">
+              <ThemeToggle />
+            </div>
+          </div>
+        </header>
+
+        <main className="space-y-8">
+          {/* Back Button */}
+          <Link href="/blog">
+            <div className="flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+              <FaArrowLeft className="mr-2" />
+              <span>Back to all posts</span>
+            </div>
+          </Link>
+
+          {/* Blog Post */}
+          <article>
+            <div className="mb-8">
+              {post.coverImage && (
+                <div className="w-full h-64 mb-6 overflow-hidden rounded-lg">
+                  <Image
+                    src={post.coverImage}
+                    alt={post.title}
+                    width={800}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              )}
+
+              <h1 className="text-4xl font-bold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block mb-4">
+                {post.title}
+              </h1>
+
+              <div className="flex items-center mb-8 text-gray-600 dark:text-gray-400">
+                <span>
+                  {new Date(post.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </span>
+                <span className="mx-2">•</span>
+                <span>{post.readingTime}</span>
+              </div>
+
+              <div className="flex flex-wrap gap-2 mb-8">
+                {post.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="prose prose-slate dark:prose-invert max-w-none">
+              <MDXRemote source={post.content} />
+            </div>
+          </article>
+        </main>
+
+        <footer className="mt-20 pb-8">
+          <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
+            © 2024 Ardavan Shahrabi. Built with Next.js, TailwindCSS and Framer motion. All rights reserved.
+          </p>
+        </footer>
       </div>
     </div>
   );

@@ -788,47 +788,6 @@ export default function Home() {
             </div>
           </motion.section>
 
-
-          <motion.section 
-  initial={{opacity: 0, y: 100}}
-  animate={{opacity: 1, y: 0}}
-  transition={{duration: 0.8}}
-  className="space-y-8"
->
-  <h2 className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block mb-6">
-    Latest Articles
-  </h2>
-  
-  <div className="grid grid-cols-1 gap-6">
-    <div className="bg-gray-50 dark:bg-zinc-900 p-6 rounded-lg border border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:shadow-md">
-      <h3 className="text-xl font-semibold mb-2">My First Blog Post</h3>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-2">March 1, 2025</p>
-      <p className="text-gray-600 dark:text-gray-300 mb-4">This is my first blog post about web development</p>
-      <Link 
-        href="/blog/first-post"
-        className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
-      >
-        Read more
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </Link>
-    </div>
-  </div>
-  
-  <div className="text-center">
-    <Link 
-      href="/blog"
-      className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
-    >
-      View all articles
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-      </svg>
-    </Link>
-  </div>
-</motion.section>
-
           <footer className="mt-20 pb-8">
             <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
               © 2024 Ardavan Shahrabi. Built with Next.js, TailwindCSS and Framer motion. All rights reserved.
