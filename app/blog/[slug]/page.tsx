@@ -9,20 +9,19 @@ import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
-
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-export default async function BlogPostPage({ 
-  params 
-}: { 
-  params: { 
-    slug: string
-  } 
-}) {
-  const slug = params.slug;
+interface PageProps {
+  params: {
+    slug: string;
+  }
+}
+
+export default async function BlogPostPage(props: PageProps) {
+  const slug = props.params.slug;
   const post = await getPostBySlug(slug);
   
   if (!post) {
