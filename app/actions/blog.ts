@@ -6,7 +6,6 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/blog');
 
-// Create the posts directory if it doesn't exist
 try {
   if (!fs.existsSync(postsDirectory)) {
     fs.mkdirSync(postsDirectory, { recursive: true });
@@ -70,7 +69,6 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
 
-    // Calculate reading time (rough estimate: 200 words per minute)
     const wordCount = content.split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / 200);
 
