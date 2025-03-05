@@ -110,27 +110,32 @@ export default function Home() {
               className="space-y-3"
             >
               <h2 className="text-lg">Hi There!
-                <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-                  I&apos;m Ardavan Shahrabi, a recent Computer Science graduate with a passion for problem-solving, <span className="font-bold text-black dark:text-white">algorithms</span>, and building impactful software. I love turning complex challenges into elegant solutions and writing code that makes people&apos;s lives easier.
+              <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
+  I&apos;m Ardavan Shahrabi, a recent Computer Science graduate with a passion for problem-solving, <span className="font-bold text-black dark:text-white">algorithms</span>, and building impactful software. I love turning complex challenges into elegant solutions and writing code that makes people&apos;s lives easier.
+</p>
 
-                  I have experience in full-stack development, <span className="font-bold text-black dark:text-white">Machine Learning</span>, and cybersecurity, with certifications in Cybersecurity from <span className="font-bold text-black dark:text-white">Dalhousie University</span> and DevOps from ShiftKey Lab at Dalhousie University. Whether it&apos;s optimizing performance, automating workflows, or crafting user-centered solutions that remove friction from everyday digital interactions, I enjoy diving deep into technology to create efficient and scalable solutions.
+<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
+  I have experience in full-stack development, <span className="font-bold text-black dark:text-white">Machine Learning</span>, and cybersecurity, with certifications in Cybersecurity from <span className="font-bold text-black dark:text-white">Dalhousie University</span> and DevOps from ShiftKey Lab at Dalhousie University. Whether it&apos;s optimizing performance, automating workflows, or crafting user-centered solutions that remove friction from everyday digital interactions, I enjoy diving deep into technology to create efficient and scalable solutions.
+</p>
 
-                  Recently, I played a key role in developing an AI-driven networking application, collaborating with a talented team in a high-pressure 10-hour <span className="font-bold text-black dark:text-white">hackathon</span> where we secured <span className="font-bold text-black dark:text-white bold">first place.</span> I worked across multiple areas, from database architecture to OpenAI API integration, ensuring the project&apos;s success and technical excellence.
+<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
+  Recently, I played a key role in developing an AI-driven networking application, collaborating with a talented team in a high-pressure 10-hour <span className="font-bold text-black dark:text-white">hackathon</span> where we secured <span className="font-bold text-black dark:text-white bold">first place.</span> I worked across multiple areas, from database architecture to OpenAI API integration, ensuring the project&apos;s success and technical excellence.
+</p>
 
-                  Beyond competitions, my work includes academic research in combinatorial pattern matching, where I helped optimize query processing for large-scale genomic datasets. My research aimed to significantly reduce data processing time and memory usage, making large-scale analyses more efficient.
+<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
+  Beyond competitions, my work includes academic research in combinatorial pattern matching, where I helped optimize query processing for large-scale genomic datasets. My research aimed to significantly reduce data processing time and memory usage, making large-scale analyses more efficient.
+</p>
 
-                  I&apos;m always eager to learn, build, and innovate—whether it&apos;s developing intuitive applications, enhancing system security, or solving intricate coding problems. Let&apos;s connect and create something awesome!
-                </p>
+<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
+  I&apos;m always eager to learn, build, and innovate—whether it&apos;s developing intuitive applications, enhancing system security, or solving intricate coding problems. Let&apos;s connect and create something awesome!
+</p>
 
-                <p> 
+{/* This creates a proper spacing between sections */}
+<div className="h-4"></div>
 
-                  
-                </p>
-
-                <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">I&apos;m deeply committed to leveraging my technical expertise to create more accessible and inclusive technology. My ultimate goal is to develop solutions that break down barriers and make digital experiences more intuitive for everyone, regardless of their background or abilities.
-                   I believe technology should serve humanity by simplifying complex tasks and creating equal opportunities. Whether through designing user-friendly interfaces, optimizing performance for those with limited resources, or building adaptive systems that accommodate diverse needs, 
-                   I aim to use my skills to bridge technological divides and empower communities that have traditionally been underserved by technology. What drives me most is seeing how thoughtfully designed software can transform daily challenges 
-                  into seamless experiences, giving people more time and freedom to focus on what truly matters to them.</p>
+<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
+  I&apos;m deeply committed to leveraging my technical expertise to create more accessible and inclusive technology. My ultimate goal is to develop solutions that break down barriers and make digital experiences more intuitive for everyone, regardless of their background or abilities. I believe technology should serve humanity by simplifying complex tasks and creating equal opportunities. Whether through designing user-friendly interfaces, optimizing performance for those with limited resources, or building adaptive systems that accommodate diverse needs, I aim to use my skills to bridge technological divides and empower communities that have traditionally been underserved by technology. What drives me most is seeing how thoughtfully designed software can transform daily challenges into seamless experiences, giving people more time and freedom to focus on what truly matters to them.
+</p>
               </h2>
             </motion.div>
 
