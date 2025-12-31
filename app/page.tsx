@@ -4,7 +4,7 @@ import ThemeToggle from '../components/ui/theme-toggle';
 import {motion} from 'framer-motion'
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
 import HoverMenu from "../components/HoverMenu";
 import { useState, useEffect } from 'react';
@@ -95,7 +95,7 @@ export default function Home() {
               transition={{duration: 0.8}}
               className="space-y-1" 
             >
-              <h1 className="text-4xl front-bold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block">
+              <h1 className="text-4xl font-bold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block">
                 Ardavan Shahrabi
               </h1>
               <p className="text-gray-600 dark:text-gray-400">Software Developer & Machine Learning Engineer</p>
@@ -109,56 +109,19 @@ export default function Home() {
               transition={{duration: 0.8}}
               className="space-y-3"
             >
-              <h2 className="text-lg">Hi There!
+              <h2 className="text-lg">Hi There!</h2>
               <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-  I&apos;m Ardavan Shahrabi, a recent Computer Science graduate with a passion for problem-solving, <span className="font-bold text-black dark:text-white">algorithms</span>, and building impactful software. I love turning complex challenges into elegant solutions and writing code that makes people&apos;s lives easier.
+  I&apos;m Ardavan Shahrabi, a Computer Science graduate from <span className="font-bold text-black dark:text-white">Dalhousie University</span> with a passion for <span className="font-bold text-black dark:text-white">algorithms</span>, full-stack development, and <span className="font-bold text-black dark:text-white">Machine Learning</span>. I love turning complex challenges into elegant solutions and building software that makes a real impact.
 </p>
 
 <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-  I have experience in full-stack development, <span className="font-bold text-black dark:text-white">Machine Learning</span>, and cybersecurity, with certifications in Cybersecurity from <span className="font-bold text-black dark:text-white">Dalhousie University</span> and DevOps from ShiftKey Lab at Dalhousie University. Whether it&apos;s optimizing performance, automating workflows, or crafting user-centered solutions that remove friction from everyday digital interactions, I enjoy diving deep into technology to create efficient and scalable solutions.
+  My experience spans from winning a <span className="font-bold text-black dark:text-white">first-place hackathon</span> building an AI-driven networking app, to conducting academic research in combinatorial pattern matching where I helped reduce computational time by over 50% for genomic data processing. I hold certifications in Cybersecurity and DevOps.
 </p>
 
 <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-  Recently, I played a key role in developing an AI-driven networking application, collaborating with a talented team in a high-pressure 10-hour <span className="font-bold text-black dark:text-white">hackathon</span> where we secured <span className="font-bold text-black dark:text-white bold">first place.</span> I worked across multiple areas, from database architecture to OpenAI API integration, ensuring the project&apos;s success and technical excellence.
+  I&apos;m driven by creating accessible, inclusive technology that simplifies complex tasks and empowers users. Let&apos;s connect and build something awesome!
 </p>
-
-<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-  Beyond competitions, my work includes academic research in combinatorial pattern matching, where I helped optimize query processing for large-scale genomic datasets. My research aimed to significantly reduce data processing time and memory usage, making large-scale analyses more efficient.
-</p>
-
-<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-  I&apos;m always eager to learn, build, and innovate—whether it&apos;s developing intuitive applications, enhancing system security, or solving intricate coding problems. Let&apos;s connect and create something awesome!
-</p>
-
-{/* This creates a proper spacing between sections */}
-<div className="h-4"></div>
-
-<p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-  I&apos;m deeply committed to leveraging my technical expertise to create more accessible and inclusive technology. My ultimate goal is to develop solutions that break down barriers and make digital experiences more intuitive for everyone, regardless of their background or abilities. I believe technology should serve humanity by simplifying complex tasks and creating equal opportunities. Whether through designing user-friendly interfaces, optimizing performance for those with limited resources, or building adaptive systems that accommodate diverse needs, I aim to use my skills to bridge technological divides and empower communities that have traditionally been underserved by technology. What drives me most is seeing how thoughtfully designed software can transform daily challenges into seamless experiences, giving people more time and freedom to focus on what truly matters to them.
-</p>
-              </h2>
             </motion.div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-  {[
-    { value: '3+', label: 'Years Experience' },
-    { value: '5+', label: 'Projects Completed' },
-    { value: '10+', label: 'Technologies' },
-    { value: '1', label: 'Hackathon Win' }
-  ].map((stat, i) => (
-    <motion.div 
-      key={i}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: i * 0.1 }}
-      viewport={{ once: true }}
-      className="bg-gray-50 dark:bg-zinc-900 p-4 rounded-lg text-center"
-    >
-      <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">{stat.value}</p>
-      <p className="text-gray-600 dark:text-gray-400 text-sm">{stat.label}</p>
-    </motion.div>
-  ))}
-</div>
 
             <motion.div
               initial={{opacity: 0, x: 50}}
@@ -223,10 +186,8 @@ export default function Home() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
                     <p className="italic">Dalhousie University</p>
                     <p className="font-medium">Bachelor of Computer Science with honours (First Class Honours), (GPA: 3.93 / 4.3)</p>
-                    <p className="text-blue-600 dark:text-ble-400"></p>
                   </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400"></p>
               </div>
             </motion.section>
 
@@ -314,34 +275,6 @@ export default function Home() {
   </h2>
   
   <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-6">
-    {/* WhoRU Startup Experience */}
-    <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
-        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
-      </span>
-      <div className="space-y-1">
-        <p className="text-sm text-gray-600 dark:text-gray-400">Nov, 2024 - Present</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-        <p className="font-medium text-indigo-900 dark:text-indigo-300">Founder & Developer</p>
-        <p className="text-black-600 dark:text-blue-400 italic">WhoRU? (Startup)</p>
-      </div>
-      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-        What started as an ambitious idea in a high-pressure AI hackathon has now evolved into a full-fledged startup. Our AI-powered networking app is designed to help professionals seamlessly capture, organize, and recall key details about the people they meet.
-
-        From intelligent voice transcription to smart suggestions, we&apos;re continuously refining the platform—iterating on AI capabilities, conducting user testing, and ensuring the product aligns with real-world networking needs.
-
-        This journey began with a winning hackathon project, but our vision extends far beyond that. We&apos;re transforming an innovative prototype into a market-ready solution, redefining how professionals build and maintain meaningful connections.
-        <a 
-          href="https://agentic-ai-hackathon.vercel.app/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          Click here
-        </a> 
-      </p>
-    </div>
-    
     {/* IT Help Desk Experience */}
     <div className="mb-10 ml-6">
       <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
@@ -390,15 +323,13 @@ export default function Home() {
       <div className="space-y-1">
         <p className="text-sm text-gray-600 dark:text-gray-400">June, 2023 - Oct, 2023</p>
         <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-        <p className="font-medium text-indigo-900 dark:text-indigo-300">Student Coordinator at Shiftkey Lab (Volunteer)</p>
-        <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Student Coordinator (Volunteer)</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Shiftkey Lab, Dalhousie University</p>
       </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-        As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
+        As a Student Coordinator at Shiftkey Lab, I helped organize and facilitate DevOps workshops and coding sessions for students. I coordinated events, managed participant registrations, and ensured smooth operations during hands-on technical training sessions.
 
-        By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
-
-        This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
+        I also assisted in mentoring fellow students, helping them navigate development tools and best practices. This role strengthened my leadership, communication, and organizational skills while contributing to the tech community at Dalhousie.
       </p>
     </div>
   </div>
@@ -452,11 +383,6 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex justify-end mt-4">
-                        <Button variant="ghost" size="icon">
-                          <FaArrowRight className="w-4 h-4"/>
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -507,11 +433,6 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex justify-end mt-4">
-                        <Button variant="ghost" size="icon">
-                          <FaArrowRight className="w-4 h-4"/>
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -559,11 +480,6 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex justify-end mt-4">
-                        <Button variant="ghost" size="icon">
-                          <FaArrowRight className="w-4 h-4"/>
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -603,11 +519,6 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex justify-end mt-4">
-                        <Button variant="ghost" size="icon">
-                          <FaArrowRight className="w-4 h-4"/>
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -631,7 +542,6 @@ export default function Home() {
                           <h4 className="font-medium mb-2">Key Features:</h4>
                           <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
                             <li>Linear Regression Model: Developed a linear regression model to quantify the impact of factors such as student absences, parental support, and study habits on grades.</li>
-                            <li>RESTful API: Designed and implemented a RESTful API for seamless communication between the front-end and back-end of the website.</li>
                             <li>Data Visualizations: Created compelling visualizations to communicate key findings, making complex data more accessible and understandable.</li>
                             <li>Data Analysis: Analyzed a large dataset from Kaggle to identify key variables that affect students&apos; academic performance using Python and data visualization tools.</li>
                             <li>Key Findings: Found that student absences were the most significant negative factor affecting academic performance, while parental support and study habits contributed positively to students' success.</li>
@@ -643,11 +553,6 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex justify-end mt-4">
-                        <Button variant="ghost" size="icon">
-                          <FaArrowRight className="w-4 h-4"/>
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -805,7 +710,7 @@ export default function Home() {
 
           <footer className="mt-20 pb-8">
             <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-              © 2024 Ardavan Shahrabi. Built with Next.js, TailwindCSS and Framer motion. All rights reserved.
+              © 2025 Ardavan Shahrabi. Built with Next.js, TailwindCSS and Framer motion. All rights reserved.
             </p>
           </footer>
         </main>
