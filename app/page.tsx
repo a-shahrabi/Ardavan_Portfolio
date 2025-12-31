@@ -525,39 +525,6 @@ export default function Home() {
               </Card>
             </div>
 
-            <div className="space-y-6"> 
-              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
-                <CardContent className="p-4">
-                  <div className="flex flex-col"> 
-                    <div className="w-full flex flex-col">
-                      <div>
-                        <h3 className="text-xl font-medium mb-2">Academic Performance Analysis</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                          In this project, I worked with a team of three to analyze a comprehensive dataset from Kaggle, which focused on variables influencing students&apos; academic performance. Using Python and data visualization tools, we explored and visualized the data to uncover meaningful insights.
-                          I developed a linear regression model to quantify the impact of various factors, with a particular focus on mathematics performance. Our key finding was that student absences had the greatest negative impact on academic performance. Additionally, we discovered that parental support and study habits played significant roles in influencing students&apos; success.
-                          To communicate our findings, I created impactful data visualizations and presented them to the team and stakeholders. The project concluded with actionable insights that can guide educational interventions and student support strategies.
-                        </p>
-                        
-                        <div className="mb-4">
-                          <h4 className="font-medium mb-2">Key Features:</h4>
-                          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                            <li>Linear Regression Model: Developed a linear regression model to quantify the impact of factors such as student absences, parental support, and study habits on grades.</li>
-                            <li>Data Visualizations: Created compelling visualizations to communicate key findings, making complex data more accessible and understandable.</li>
-                            <li>Data Analysis: Analyzed a large dataset from Kaggle to identify key variables that affect students&apos; academic performance using Python and data visualization tools.</li>
-                            <li>Key Findings: Found that student absences were the most significant negative factor affecting academic performance, while parental support and study habits contributed positively to students' success.</li>
-                          </ul>
-                        </div>
-
-                        <div className="flex flex-wrap gap-2">
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">R</span>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </motion.section>
 
           <motion.section 
