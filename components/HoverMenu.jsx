@@ -17,10 +17,13 @@ const HoverMenu = () => {
   ]
   
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <motion.button
         className="flex items-center space-x-2 px-4 py-2 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-700 dark:to-slate-900 text-white"
-        onMouseEnter={() => setIsOpen(true)}
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -34,7 +37,7 @@ const HoverMenu = () => {
           ▼
         </motion.span>
       </motion.button>
-      
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -43,7 +46,6 @@ const HoverMenu = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
             className="absolute right-0 mt-2 w-60 rounded-xl shadow-xl py-2 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 z-50"
-            onMouseLeave={() => setIsOpen(false)}
           >
             {menuItems.map((item, index) => (
               <motion.div
