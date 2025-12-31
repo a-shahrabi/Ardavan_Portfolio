@@ -275,23 +275,21 @@ export default function Home() {
   </h2>
   
   <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-6">
-    {/* IT Help Desk Experience */}
+    {/* Sales Development Representative Experience */}
     <div className="mb-10 ml-6">
       <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
-        <p className="text-sm text-gray-600 dark:text-gray-400">Dec, 2023 - January, 2025</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-        <p className="font-medium text-indigo-900 dark:text-indigo-300">IT Help Desk</p>
-        <p className="text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Jan, 2025 - Present</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Ontario, Canada</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Sales Development Representative</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Company Name</p>
       </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-        As an IT Support Specialist, I provided hands-on technical support, ensuring company systems ran smoothly and securely. From setting up workstations for new employees to troubleshooting software and hardware issues, I worked to maintain a seamless digital workspace.
+        As a Sales Development Representative, I identify and qualify potential clients through strategic outreach and lead generation. I leverage data-driven insights to craft personalized communication, building meaningful relationships with prospects and contributing to the sales pipeline.
 
-        Beyond solving immediate technical problems, I focused on empowering users. I developed an internal knowledge base with 10+ step-by-step user guides covering essential IT procedures, from printer setup to remote access. Additionally, I led bi-weekly training sessions for teams of 5-10 employees, equipping them with the skills to navigate Microsoft Office and company-specific software confidently.
-
-        By combining technical expertise with user education, I helped bridge the gap between IT and everyday workflows—making technology more accessible, efficient, and secure.
+        My role combines technical knowledge with sales acumen, enabling me to effectively communicate product value propositions and understand client needs. I collaborate closely with the sales team to optimize conversion strategies and drive business growth.
       </p>
     </div>
     
