@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300">
       
        
         {showBackToTop && (
@@ -65,7 +65,7 @@ export default function Home() {
           initial={{opacity: 0, x: -100}}
           animate={{opacity: 1, x: 0}}
           transition={{duration: 0.8}} 
-          className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4"
+          className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm py-4 px-4"
         >
           <div className="w-20 h-20 rounded-full overflow-hidden">
           <Image 
@@ -277,7 +277,7 @@ export default function Home() {
   <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-6">
     {/* Atlas API - Open-source Contributor */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -293,7 +293,7 @@ export default function Home() {
 
     {/* Machine Learning Engineer - Climate Resilient Communities */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -309,7 +309,7 @@ export default function Home() {
 
     {/* Software Developer - retainium.ca */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -325,7 +325,7 @@ export default function Home() {
 
     {/* Machine Learning Research Collaborator - UofT */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -341,7 +341,7 @@ export default function Home() {
 
     {/* AI Software Developer - Canadian Multicultural Inventors Museum */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -357,7 +357,7 @@ export default function Home() {
 
     {/* Sales Representative - ByDesign */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -373,7 +373,7 @@ export default function Home() {
 
     {/* Software Developer - JuniorDevForge */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
@@ -389,7 +389,7 @@ export default function Home() {
 
     {/* Research Assistant - Dalhousie */}
     <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-slate-900">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">

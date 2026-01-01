@@ -24,10 +24,10 @@ async function BlogPosts() {
 
 export default async function BlogPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300">
       <div className="mx-auto max-w-4xl px-4 py-20">
         {/* Header */}
-        <header className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm py-4 px-4">
+        <header className="flex items-center justify-between mb-12 top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm py-4 px-4">
           <Link href="/">
             <div className="w-20 h-20 rounded-full overflow-hidden">
               <Image
