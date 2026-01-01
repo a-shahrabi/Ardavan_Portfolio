@@ -275,59 +275,131 @@ export default function Home() {
   </h2>
   
   <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-6">
-    {/* Sales Development Representative Experience */}
+    {/* Atlas API - Open-source Contributor */}
     <div className="mb-10 ml-6">
       <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
-        <p className="text-sm text-gray-600 dark:text-gray-400">Jan, 2025 - Present</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Ontario, Canada</p>
-        <p className="font-medium text-indigo-900 dark:text-indigo-300">Sales Development Representative</p>
-        <p className="text-black-600 dark:text-blue-400 italic">Company Name</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Sep 2025 - Present</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">London, UK (Remote)</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Open-source Contributor</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Atlas API – BrainGlobe</p>
       </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-        As a Sales Development Representative, I identify and qualify potential clients through strategic outreach and lead generation. I leverage data-driven insights to craft personalized communication, building meaningful relationships with prospects and contributing to the sales pipeline.
-
-        My role combines technical knowledge with sales acumen, enabling me to effectively communicate product value propositions and understand client needs. I collaborate closely with the sales team to optimize conversion strategies and drive business growth.
+        Implemented a hierarchical brain-structure query feature (get_structures_at_hierarchy_level) for BrainGlobe Atlas API (open-source neuroscience toolkit), enabling depth-based filtering of anatomical structures and proposing a fix for GitHub issue #623. Added robust input validation, error handling, and a test suite with 16 unit tests while keeping all 22 existing tests passing, improving reliability and establishing patterns for future contributors.
       </p>
     </div>
-    
-    {/* Research Assistant Experience */}
+
+    {/* Machine Learning Engineer - Climate Resilient Communities */}
     <div className="mb-10 ml-6">
       <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
         <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
       </span>
       <div className="space-y-1">
-        <p className="text-sm text-gray-600 dark:text-gray-400">Feb, 2023 - Aug, 2023</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Aug 2025 - Present</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Toronto, ON</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Machine Learning Engineer (Volunteer) – NLP Team</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Climate Resilient Communities</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        Integrated BERTopic topic modeling with MMR representation for climate anxiety analysis on 5,000+ social media posts. Resolved complex Python dependency conflicts (PyTorch, Transformers, NumPy compatibility issues). Documented Cohere API deprecation and implemented fallback solution, preventing project delays. Collaborated via Git/GitHub on production ML pipeline processing Twitter and Reddit data.
+      </p>
+    </div>
+
+    {/* Software Developer - retainium.ca */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">May 2025 - Present</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Toronto, ON</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Software Developer (Contract)</p>
+        <p className="text-black-600 dark:text-blue-400 italic">retainium.ca (Startup)</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        Authored Jest/React Testing Library test suite validating minimum dimension constraints, mouse event simulation, and callback functions to ensure production-ready resize functionality. Implemented RBAC and refined schema/state management to harden data access and improve maintainability. Enhanced UI/UX and performance through structured GitHub issues, code reviews, and incremental refactors. Worked in an Agile team using PR-based collaboration, version control, and testing pipelines.
+      </p>
+    </div>
+
+    {/* Machine Learning Research Collaborator - UofT */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">May 2025 - Sep 2025</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Toronto, ON</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Machine Learning Research Collaborator</p>
+        <p className="text-black-600 dark:text-blue-400 italic">University of Toronto</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        Collaborated with a university professor to develop technical course materials for a Machine Learning and Data Science class. Assisted in designing assignments, lecture slides, and coding exercises covering core ML topics (supervised/unsupervised learning, model evaluation, data preprocessing). Built and tested machine learning models using Python, scikit-learn, and pandas for use in instructional content and student projects. Conducted code reviews and provided feedback on ML pipelines and model performance for coursework examples.
+      </p>
+    </div>
+
+    {/* AI Software Developer - Canadian Multicultural Inventors Museum */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Mar 2025 - Dec 2025</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Toronto, ON</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">AI Software Developer (Contract)</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Canadian Multicultural Inventors Museum</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        Built a React/Next.js learning platform with Supabase backend for youth AI/ML education. Designed PostgreSQL schema with row-level security and RBAC, ensuring secure and persistent progress tracking. Created gamified modules, quizzes, and a real-time leaderboard using Supabase Realtime APIs.
+      </p>
+    </div>
+
+    {/* Sales Representative - ByDesign */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Dec 2023 - Dec 2024</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Sales Representative</p>
+        <p className="text-black-600 dark:text-blue-400 italic">ByDesign Embroidery & Screen Print</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        Managed end-to-end custom apparel orders for corporate, government, and community clients, from first inquiry to final delivery. Maintained ongoing communication and follow-ups with key accounts, helping build long-term relationships and referrals.
+      </p>
+    </div>
+
+    {/* Software Developer - JuniorDevForge */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Sep 2023 - Dec 2023</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
+        <p className="font-medium text-indigo-900 dark:text-indigo-300">Software Developer (Project) — JuniorDevForge</p>
+        <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
+      </div>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
+        Built a collaboration platform for junior devs using Node.js, React, MongoDB, and Express. Designed database schemas and implemented clean UI/UX for seamless user flow.
+      </p>
+    </div>
+
+    {/* Research Assistant - Dalhousie */}
+    <div className="mb-10 ml-6">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
+        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+      </span>
+      <div className="space-y-1">
+        <p className="text-sm text-gray-600 dark:text-gray-400">Feb 2023 - Aug 2023</p>
         <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
         <p className="font-medium text-indigo-900 dark:text-indigo-300">Research Assistant</p>
         <p className="text-black-600 dark:text-blue-400 italic">Dalhousie University</p>
       </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-        As a Research Assistant at Dalhousie University, I contributed to cutting-edge work in combinatorial pattern matching, co-authoring a research paper published in Volume 259, pages 26:1-26:14, 2023. My focus was on optimizing algorithms for large-scale data processing, with real-world applications in genomics and beyond.
-
-        By refining query processing techniques, I helped reduce computational time by over 50%, significantly accelerating data retrieval. Additionally, I developed space-efficient indexing methods, cutting memory usage in half and enabling more scalable solutions for handling vast genomic datasets.
-
-        This research has the potential to transform how large datasets are processed, reducing analysis times from several hours to under an hour—opening doors to faster, more efficient insights in data-intensive fields.
-      </p>
-    </div>
-    
-    {/* Student Coordinator Experience */}
-    <div className="mb-10 ml-6">
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full -left-3 ring-8 ring-white dark:ring-black">
-        <div className="w-3 h-3 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
-      </span>
-      <div className="space-y-1">
-        <p className="text-sm text-gray-600 dark:text-gray-400">June, 2023 - Oct, 2023</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Halifax, NS</p>
-        <p className="font-medium text-indigo-900 dark:text-indigo-300">Student Coordinator (Volunteer)</p>
-        <p className="text-black-600 dark:text-blue-400 italic">Shiftkey Lab, Dalhousie University</p>
-      </div>
-      <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-        As a Student Coordinator at Shiftkey Lab, I helped organize and facilitate DevOps workshops and coding sessions for students. I coordinated events, managed participant registrations, and ensured smooth operations during hands-on technical training sessions.
-
-        I also assisted in mentoring fellow students, helping them navigate development tools and best practices. This role strengthened my leadership, communication, and organizational skills while contributing to the tech community at Dalhousie.
+        Engineered space-efficient indexing for genomic data, projected to reduce memory usage by 50%. Enhanced data query speed, cutting processing time from hours to under an hour for large datasets.
       </p>
     </div>
   </div>
