@@ -415,141 +415,79 @@ export default function Home() {
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-slate-950 to-blue-800 dark:from-slate-200 dark:to-blue-400 bg-clip-text text-transparent inline-block mb-6">
               Projects
             </h2>
-            <div className="space-y-6"> 
-              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+            <div className="space-y-6">
+              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <CardContent className="p-4">
-                  <div className="flex flex-col"> 
-                    <div className="w-full flex flex-col">
-                      <div>
-                        <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                          I created a modern and interactive portfolio website to showcase my skills, projects, and experience. The website is built with Next.js, ensuring fast page loads and excellent SEO. I incorporated Framer Motion to add smooth, engaging animations for a dynamic user experience.
-                          The design is made using ShadCN, which helped me craft a sleek,
-                          responsive interface with modern design elements.
-                        </p>
-                        
-                        <div className="mb-4">
-                          <h4 className="font-medium mb-2">Key Features:</h4>
-                          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                            <li>Dark/Light Mode Toggle: Easily switch between dark and light themes for a personalized browsing experience.</li>
-                            <li>Smooth Page Transitions: Seamless transitions between pages powered by Framer Motion, creating a smooth and engaging user experience.</li>
-                            <li>Responsive Design: The website is fully responsive, ensuring it looks great and functions perfectly on all devices, from desktops to mobile phones.
-                              <a 
-                                href="https://ardavan-portfolio.vercel.app/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-blue-600 dark:text-blue-400 hover:underline"
-                              >
-                                Click here
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="flex flex-wrap gap-2">
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
-                        </div>
-                      </div>
-
+                  <div className="flex flex-col">
+                    <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                      Modern portfolio built with Next.js featuring dark/light mode, smooth Framer Motion animations, and responsive design.
+                      <a
+                        href="https://ardavan-portfolio.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                      >
+                        View live →
+                      </a>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            <div className="space-y-6"> 
-              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+            <div className="space-y-6">
+              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <CardContent className="p-4">
-                  <div className="flex flex-col"> 
-                    <div className="w-full flex flex-col">
-                      <div>
-                        <h3 className="text-xl font-medium mb-2">JuniorDevForge</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                          As part of a team of 6, I helped develop JuniorDevForge, a platform designed to support junior developers by enabling 
-                          collaborative project development and providing access to industry-relevant resources. The platform allows users to form 
-                          teams and work together on real-world projects, fostering learning and growth in a practical setting.
-                          I contributed to the project by designing and implementing the database architecture with MongoDB, ensuring efficient data 
-                          management and scalability. Additionally, I applied design thinking principles to create an intuitive and user-friendly 
-                          interface, enhancing the overall user experience. The platform was successfully deployed, empowering junior developers to 
-                          collaborate, learn, and build impactful projects.
-                        </p>
-                      
-                        <div className="mb-4">
-                          <h4 className="font-medium mb-2">Key Features:</h4>
-                          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                            <li>Collaborative Project Development: Enables junior developers to form teams and work on real-world projects together, promoting teamwork and skill growth.</li>
-                            <li>Seamless Deployment: The platform was successfully deployed, allowing junior developers to access it anytime to collaborate on projects.</li>
-                            <li>MongoDB Database Integration: Designed and implemented a scalable database architecture to manage user data, project information, and team collaborations efficiently.</li>
-                            <li>User-Friendly Interface: The platform&apos;s interface was built with a focus on usability, incorporating design thinking principles to make it easy for users to navigate and interact with.
-                              <a 
-                                href="https://junior-dev-forge.vercel.app/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-blue-600 dark:text-blue-400 hover:underline"
-                              >
-                                Click here
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="flex flex-wrap gap-2">
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">React</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">MongoDB</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Express</span>
-                        </div>
-                      </div>
-
+                  <div className="flex flex-col">
+                    <h3 className="text-xl font-medium mb-2">JuniorDevForge</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                      Collaboration platform for junior developers to form teams and work on real-world projects. Built with a team of 6, designed the MongoDB database architecture and user interface.
+                      <a
+                        href="https://junior-dev-forge.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                      >
+                        View live →
+                      </a>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">React</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">MongoDB</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Express</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            <div className="space-y-6"> 
-              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer"> 
+            <div className="space-y-6">
+              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <CardContent className="p-4">
-                  <div className="flex flex-col"> 
-                    <div className="w-full flex flex-col">
-                      <div>
-                        <h3 className="text-xl font-medium mb-2">MONI-k</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                          MONI-k is a project focused on indexing large text datasets for genetics studies. 
-                          I implemented efficient data structures and algorithms in C to enhance the indexing process, 
-                          enabling faster and more accurate data retrieval for genetic analysis. My work contributed to 
-                          optimizing the data processing capabilities of the project, which is crucial for large-scale genomic studies.
-                          Additionally, I co-authored a paper detailing the project, which was accepted for presentation at the Annual 
-                          Symposium on Combinatorial Pattern Matching.
-                        </p>
-                        
-                        <div className="mb-4">
-                          <h4 className="font-medium mb-2">Key Features:</h4>
-                          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-600 dark:text-gray-400">
-                            <li>Efficient Data Indexing: Developed data structures and algorithms to efficiently index large-scale genetic datasets, improving processing speed and accuracy.</li>
-                            <li>Genetics-Focused Algorithms: Specialized in algorithms that optimize text indexing for genomic data, addressing the unique challenges of large genetic datasets.</li>
-                            <li>Paper Publication: Co-authored a research paper accepted by the Annual Symposium on Combinatorial Pattern Matching.
-                              <a 
-                                href="https://ui.adsabs.harvard.edu/abs/2022arXiv220205085T/abstract" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="text-blue-600 dark:text-blue-400 hover:underline"
-                              >
-                                Click here
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="flex flex-wrap gap-2">
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">C</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Algorithm</span>
-                          <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Data Structure</span>
-                        </div>
-                      </div>
-
+                  <div className="flex flex-col">
+                    <h3 className="text-xl font-medium mb-2">MONI-k</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                      Genomic data indexing tool using efficient algorithms in C. Co-authored research paper accepted at the Annual Symposium on Combinatorial Pattern Matching.
+                      <a
+                        href="https://ui.adsabs.harvard.edu/abs/2022arXiv220205085T/abstract"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                      >
+                        View paper →
+                      </a>
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">C</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Algorithms</span>
+                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Data Structures</span>
                     </div>
                   </div>
                 </CardContent>
