@@ -419,32 +419,6 @@ export default function Home() {
               <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <CardContent className="p-4">
                   <div className="flex flex-col">
-                    <h3 className="text-xl font-medium mb-2">Portfolio Website</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                      Modern portfolio built with Next.js featuring dark/light mode, smooth Framer Motion animations, and responsive design.
-                      <a
-                        href="https://ardavan-portfolio.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 dark:text-blue-400 hover:underline ml-1"
-                      >
-                        View live →
-                      </a>
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Next.js</span>
-                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">TailwindCSS</span>
-                      <span className="px-2 py-1 bg-gray-100 dark:bg-zinc-800 rounded-full text-xs">Framer Motion</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="space-y-6">
-              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <CardContent className="p-4">
-                  <div className="flex flex-col">
                     <h3 className="text-xl font-medium mb-2">JuniorDevForge</h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                       Collaboration platform for junior developers to form teams and work on real-world projects. Built with a team of 6, designed the MongoDB database architecture and user interface.
