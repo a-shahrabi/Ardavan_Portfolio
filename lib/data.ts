@@ -224,8 +224,6 @@ export const skills = [
 export const certifications = [
   { name: "AWS Solutions Architect – Associate", status: "Exam scheduled Dec 2026" },
   { name: "HubSpot Inbound and Inbound Sales", status: "2026" },
-  { name: "ISC2 Certified in Cybersecurity", status: "In progress" },
-  { name: "Cisco CCNA", status: "In progress" },
 ];
 
 export const volunteering = [
