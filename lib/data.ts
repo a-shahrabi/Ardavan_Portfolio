@@ -84,7 +84,7 @@ export const experience: Experience[] = [
       "Took on the validation update for the v2 atlas format and refactored validators.",
     ],
     links: [
-      { label: "Repo", href: "https://github.com/brainglobe/brainglobe-atlasapi" },
+      { label: "BrainGlobe repo", href: "https://github.com/brainglobe/brainglobe-atlasapi" },
       { label: "UCL case study", href: "https://www.ucl.ac.uk/research-innovation/case-studies/2026/may/brainglobe-template-builder" },
     ],
   },

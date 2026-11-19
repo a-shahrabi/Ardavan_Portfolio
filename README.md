@@ -27,9 +27,9 @@ npm run lint     # ESLint
 
 ## Updating content
 
-All text content — profile links, education, skills, experience, and projects — lives in
-[`lib/data.ts`](lib/data.ts). Edit that file; the page renders from it. The "About" paragraphs
-are in [`app/page.tsx`](app/page.tsx).
+All text content — profile, about, experience, projects, publication, education, skills,
+certifications, and volunteering — lives in [`lib/data.ts`](lib/data.ts). Edit that file;
+the page renders from it.
 
 ## Project structure
 
