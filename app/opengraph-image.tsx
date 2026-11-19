@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { profile } from "@/lib/data";
 
 // Generates the preview image shown when the site is shared on LinkedIn, X, Slack, etc.
-export const alt = `${profile.name} — ${profile.title}`;
+export const alt = `${profile.name} — ${profile.headline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -23,7 +23,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ fontSize: 80, fontWeight: 700 }}>{profile.name}</div>
-        <div style={{ fontSize: 40, marginTop: 20, color: "#93c5fd" }}>{profile.title}</div>
+        <div style={{ fontSize: 40, marginTop: 20, color: "#93c5fd", maxWidth: 1000 }}>{profile.headline}</div>
         <div style={{ fontSize: 28, marginTop: 40, color: "#cbd5e1" }}>
           {profile.siteUrl.replace("https://", "")}
         </div>

@@ -7,10 +7,13 @@ import Link from "next/link";
 // Order matches the order of sections on the page
 const menuItems = [
   { title: "About Me", href: "#about", icon: "👨‍💻" },
-  { title: "Education", href: "#education", icon: "🎓" },
-  { title: "Skills", href: "#skills", icon: "🛠️" },
   { title: "Experience", href: "#experience", icon: "💼" },
   { title: "Projects", href: "#projects", icon: "🚀" },
+  { title: "Publication", href: "#publication", icon: "📄" },
+  { title: "Education", href: "#education", icon: "🎓" },
+  { title: "Skills", href: "#skills", icon: "🛠️" },
+  { title: "Certifications", href: "#certifications", icon: "📜" },
+  { title: "Volunteering", href: "#volunteering", icon: "🤝" },
   { title: "Contact", href: "#contact", icon: "📬" },
 ];
 
@@ -81,7 +84,7 @@ export default function HoverMenu() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center px-4 py-3 text-sm text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                  className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="mr-3 text-xl" aria-hidden="true">{item.icon}</span>
