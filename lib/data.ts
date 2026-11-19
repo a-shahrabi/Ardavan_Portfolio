@@ -8,7 +8,6 @@ export const profile = {
   email: "Ardavan.shahrabi@gmail.com",
   github: "https://github.com/a-shahrabi/",
   linkedin: "https://www.linkedin.com/in/a-shahrabi/",
-  resume: "/resume.pdf",
   photo: "/1.jpeg",
   siteUrl: "https://ardavan-portfolio.vercel.app",
   formspreeEndpoint: "https://formspree.io/f/mkgodzzb",

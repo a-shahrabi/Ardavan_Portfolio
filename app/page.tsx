@@ -93,16 +93,8 @@ export default function Home() {
             </p>
           </motion.section>
 
-          {/* Resume + socials */}
+          {/* Socials */}
           <motion.div {...fadeIn({ x: 50 })} className="flex items-center space-x-4">
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-9 items-center rounded-full bg-linear-to-r from-slate-900 to-blue-700 px-4 text-sm font-medium text-white shadow-sm transition-transform hover:scale-105 focus:outline-hidden focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 dark:focus:ring-offset-slate-900"
-            >
-              Resume
-            </a>
             {[
               { href: profile.github, label: "GitHub", Icon: FaGithub },
               { href: profile.linkedin, label: "LinkedIn", Icon: FaLinkedin },

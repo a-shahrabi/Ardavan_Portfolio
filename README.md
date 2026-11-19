@@ -31,8 +31,6 @@ All text content — profile links, education, skills, experience, and projects 
 [`lib/data.ts`](lib/data.ts). Edit that file; the page renders from it. The "About" paragraphs
 are in [`app/page.tsx`](app/page.tsx).
 
-To update the résumé, replace `public/resume.pdf`.
-
 ## Project structure
 
 ```
@@ -51,7 +49,7 @@ components/
   ui/                   shadcn/ui components (button, card, theme toggle)
 lib/
   data.ts               All portfolio content
-public/                 Profile photo and résumé
+public/                 Profile photo
 ```
 
 ## License
