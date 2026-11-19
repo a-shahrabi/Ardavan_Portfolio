@@ -7,15 +7,25 @@ import { profile } from "@/lib/data";
 const inter = Inter({ subsets: ["latin"] });
 
 const title = `${profile.name} | Software Developer`;
-const description =
-  "Software Developer specializing in Machine Learning, Full-Stack Development, and Open Source.";
+const description = `Software developer in ${profile.location} working on AI products, data pipelines, and testing. Open to full-time roles in software development, QA, or data/AI.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.siteUrl),
   title,
-  description:
-    "Software Developer specializing in Machine Learning, Full-Stack Development, and Open Source. Experience with React, Next.js, Python, and ML/NLP systems.",
-  keywords: ["Software Developer", "Machine Learning Engineer", "Full Stack Developer", "React", "Next.js", "Python"],
+  description,
+  keywords: [
+    "Software Developer",
+    "Toronto",
+    "AI",
+    "Data Pipelines",
+    "QA",
+    "Testing",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Python",
+    "NLP",
+  ],
   authors: [{ name: profile.name, url: profile.siteUrl }],
   alternates: { canonical: "/" },
   openGraph: {
